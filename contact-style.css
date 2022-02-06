@@ -1,8 +1,8 @@
 body {
-	font: 75% georgia, sans-serif;
+	font: 105% georgia, sans-serif;
 	line-height: 1.88889;
 	color: #555753; 
-	background: #fff url("resources/floral.jpg") no-repeat bottom right; 
+	background: #fff url("resources/floral.jpg") no-repeat bottom left; 
 	margin: 20px; 
 	padding: 0;
 }
@@ -13,6 +13,7 @@ body {
 
 /* Style inputs */
 input[type=text], select, textarea {
+	font: 80% georgia, sans-serif;
 	width: 100%;
 	padding: 12px;
 	border: 1px solid #ccc;
