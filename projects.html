@@ -1,78 +1,78 @@
 <!DOCTYPE html>
 <html>
 <style>
-body, html {
-  height: 100%;
-  margin: 0;
-}
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
 
-a:link {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
-  font-size: 35px;
-}
+  a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 35px;
+  }
 
-a:visited {
-  color: pink;
-  background-color: transparent;
-  text-decoration: none;
-  font-size: 35px;
-}
+  a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 35px;
+  }
 
-.bgimg {
-  background-image: url("assets/cyberpunk.jpg");
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  color: white;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 25px;
-}
+  .bgimg {
+    background-image: url("assets/cyberpunk.jpg");
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+  }
 
-.topleft {
-  position: absolute;
-  top: 0;
-  left: 16px;
-}
+  .topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+  }
 
-.bottomleft {
-  position: absolute;
-  bottom: 0;
-  left: 16px;
-}
+  .bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+  }
 
-.middle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
+  .middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
 
-hr {
-  margin: auto;
-  width: 40%;
-}
+  hr {
+    margin: auto;
+    width: 40%;
+  }
 </style>
 <body>
 
-<div class="bgimg">
-  <div class="topleft">
-    <p style="font-size:35px">Ruida Zeng's Projects</p>
+  <div class="bgimg">
+    <div class="topleft">
+      <p style="font-size:35px">Ruida Zeng's Projects</p>
+    </div>
+    <div class="middle" style="font-size:40px">
+      <h1>COMING SOON</h1>
+      <hr>
+      <p id="demo" style="font-size:40px"></p>
+    </div>
+    <div class="bottomleft">
+      <a href="index.html">Back to Main Menu</a>
+    </div>
   </div>
-  <div class="middle" style="font-size:40px">
-    <h1>COMING SOON</h1>
-    <hr>
-    <p id="demo" style="font-size:40px"></p>
-  </div>
-  <div class="bottomleft">
-    <a href="index.html">Back to Main Menu</a>
-  </div>
-</div>
 
-<script>
+  <script>
 // Set the date we're counting down to
 var countDownDate = new Date("May 13, 2022 08:00:00").getTime();
 
