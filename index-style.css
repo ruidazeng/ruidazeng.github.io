@@ -8,7 +8,7 @@ body {
 	font: 75% georgia, sans-serif;
 	line-height: 1.88889;
 	color: #555753; 
-	background: #fff url("resources/floral.jpg") bottom right; 
+	background: #fff url("resources/floral.jpg"); 
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	margin: 20px; 
