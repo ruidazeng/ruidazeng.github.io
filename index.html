@@ -8,8 +8,33 @@
 	<link rel="stylesheet" type="text/css" href="academic.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" crossorigin="anonymous">
+	<script src="lazysizes.min.js"></script>
 	<script src="jquery.min.js"></script>
-    <script src="bootstrap.min.js"></script>
+	<script src="bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" crossorigin="anonymous">
+	<script>
+		window.addEventListener("load", function(){
+			window.cookieconsent.initialise({
+				"palette": {
+					"popup": {
+						"background": "#795548",
+						"text": "#fff"
+					},
+					"button": {
+						"background": "#fff",
+						"text": "#795548"
+					}
+				},
+				"theme": "classic",
+				"content": {
+					"message": "This website uses cookies to ensure you get the best experience on my website.",
+					"dismiss": "Got it!",
+					"link": "Learn more",
+					"href": "https://www.cookiesandyou.com"
+				}
+			})});
+	</script>
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
@@ -85,45 +110,44 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-12 col-lg-8">
-					<h1>Biography</h1>
-					<p>Hi, I’m Ruida Zeng. I am currently working on a number of miscellaneous projects as a freelance software engineer.</p>
-					<p>My current interests in computer science includes cyber security and network cryptography within the context of cyber physical systems. This includes Internet of Things or smart city devices. I am also interested in the field of blockchains and cryptocurrencies, as I believe there is a potential that our future economic world will be dominated by decentralized transactions using virtual currencies.</p>
-					<p>If you have anything you would like to know about me, or have any questions regarding my website, don’t hesitate to contact me, and I’ll be glad to answer you.</p>
-					<div class="row">
-						<div class="col-md-5">
-							<h3>Interests</h3>
-							<ul class="ul-interests">
-								<li>Cyber Security</li>
-								<li>Network Cryptography</li>
-								<li>Blockchains & Cryptocurrencies</li>
-								<li>Privacy & Surveillance</li>
-							</ul>
-						</div>
-						<div class="col-md-7">
-							<h3>Education</h3>
-							<ul class="ul-edu fa-ul">
-								<li>
-									<i class="fa-li fas fa-graduation-cap"></i>
-									<div class="description">
-										<p class="course">B.S. Computer Science & Mathematics, 2021</p>
-										<p class="institution">Vanderbilt University</p>
-									</div>
-								</li>
-							</ul>
-						</div>
+			</div>
+			<div class="col-12 col-lg-8">
+				<h1>Biography</h1>
+				<p>Hi, I’m Ruida Zeng. I am currently working as a freelance software engineer.</p>
+				<p>My current interests in computer science includes cyber security and network cryptography within the context of cyber physical systems. This includes Internet of Things or smart city devices. I am also interested in the field of blockchains and cryptocurrencies, as I believe there is a potential that our future economic world will be dominated by decentralized transactions using virtual currencies.</p>
+				<p>If you have anything you would like to know about me, or have any questions regarding my website, don’t hesitate to contact me, and I’ll be glad to answer you.</p>
+				<div class="row">
+					<div class="col-md-5">
+						<h3>Interests</h3>
+						<ul class="ul-interests">
+							<li>Cyber Security</li>
+							<li>Network Cryptography</li>
+							<li>Blockchains & Cryptocurrencies</li>
+							<li>Privacy & Surveillance</li>
+						</ul>
+					</div>
+					<div class="col-md-7">
+						<h3>Education</h3>
+						<ul class="ul-edu fa-ul">
+							<li>
+								<i class="fa-li fas fa-graduation-cap"></i>
+								<div class="description">
+									<p class="course">B.S. Computer Science & Mathematics, 2021</p>
+									<p class="institution">Vanderbilt University</p>
+								</div>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
+	</section>
 
-<footer class="site-footer">
-	<p class="powered-by">
-		© Ruida Zeng
-	</p>
-</footer>
+	<footer class="site-footer">
+		<p class="powered-by">
+			© Ruida Zeng
+		</p>
+	</footer>
 </body>
 
 </html>
