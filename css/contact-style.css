@@ -24,6 +24,16 @@ input[type=text], select, textarea {
 	resize: vertical;
 }
 
+input[type=email], select, textarea {
+	font: 80% georgia, sans-serif;
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+
 input[type=submit] {
 	background-color: #04AA6D;
 	color: white;
