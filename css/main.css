@@ -112,7 +112,7 @@ a {
 }
 
 a:hover, a:focus, a:active {
-    color: #795548;
+    color: #656986;
 }
 
 a:hover, a:active {
@@ -2180,7 +2180,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     height: 5.6rem;
     width: 5.6rem;
     border-radius: 50%;
-    background-color: #84be5b;
+    background-color: #795548;
     -webkit-transition: all .3s;
     transition: all .3s;
     position: relative;
