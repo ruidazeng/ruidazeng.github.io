@@ -6,7 +6,7 @@
   <meta name="author" content="Ruida Zeng">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" type="text/css" href="css/contact-style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
   <link rel="icon" href="images/icons/squirrel-icon.png" type="image/icon type">
   <script src="js/lazysizes.js"></script>
@@ -16,14 +16,14 @@
   <div class="container">
     <div style="text-align:center">
       <h2>Contact Me</h2>
-      <p>Buy me a cup of <a href="https://www.buymeacoffee.com/ruida" target="_blank" rel="noopener noreferrer">coffee</i></a>, or leave me a message:</p>
+      <p>Buy me a cup of <a href="https://www.buymeacoffee.com/ruida" target="_blank" rel="noopener noreferrer"><i class="fa fa-coffee"></i></a>, or leave me a message:</p>
     </div>
     <div class="row">
       <div class="column">
         <div id="map" style="width: 900px; height: 450px; max-width: 100%; max-height: 100%"></div>
        <script>
 
-        var map = L.map('map').setView([36.1448, -86.8031], 15);
+        var map = L.map('map').setView([41.82623931304847, -71.40200262550869], 16);
 
         var tiles = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
           maxZoom: 18,
@@ -34,7 +34,8 @@
           zoomOffset: -1
         }).addTo(map);
 
-        var marker = L.marker([36.1448, -86.8031]).addTo(map)
+        var marker = L.marker([41.82709057885313, -71.39949792902526]).addTo(map)
+          .bindPopup('Department of Computer Science, Brown University Providence, RI 02912')
 
       </script>
     </div>
