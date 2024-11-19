@@ -1,15 +1,17 @@
 <div align="center">
 
-# Ruida Zeng's Personal Website
+# 🐻 Ruida Zeng's Personal Website 🐾 
 ## https://www.ruidazeng.com
 
-<a href='https://www.ruidazeng.com'><img src='https://img.shields.io/badge/Website-Visit-blue'></a>
+<a href='https://www.ruidazeng.com'><img src='https://img.shields.io/badge/Website-Visit-gold'></a>
+<a href='https://ruidazeng.github.io'><img src='https://img.shields.io/badge/GitHub%20Pages-Deployment-blue?logo=github'></a>
 <a href='mailto:ruida.zeng@vanderbilt.edu'><img src='https://img.shields.io/badge/Contact-Email-red'></a>
+<a href='https://www.ruidazeng.com/contact.html'><img src='https://img.shields.io/badge/Contact-Visit%20Page-orange'></a>
 
 [**About**](#about) | [**Explore**](#explore) | [**Contact**](#contact)
 
 <img src="images/squirrel.jpg" alt="Squirrel" width="400"/>
-<p><small>A realm of imagination and thought</small></p>
+<p><small>🐿️ A realm of imagination and thoughts! 🌰 🍂 </small></p>
 </div>
 
 ---
