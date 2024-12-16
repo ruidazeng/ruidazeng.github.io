@@ -1,0 +1,31 @@
+# Logs
+*.log
+
+# Dependency directories
+node_modules/
+/vendor
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.swp
+
+# Build artifacts (if using a static site generator)
+public/
+dist/
+_build/
+
+# User-specific configuration files
+*.env
+.env.local
+
+# GitHub Pages output
+_site/
+
+# Exclude IDE/editor config files
+.vscode/
+.idea/
+*.iml
