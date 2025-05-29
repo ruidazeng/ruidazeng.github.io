@@ -34,7 +34,7 @@
             </li>\
         </ul>\
     </div>\
-</div>';\
+ </div>';
   function insertCard(){
     var el = document.getElementById('author-card');
     if(el){ el.innerHTML = cardHtml; }
