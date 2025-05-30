@@ -8,7 +8,7 @@
         <p class="card-text">My interests include artificial intelligence, applied cryptography, and decentralized finance & blockchains.</p>\
         <ul class="network-icon" aria-hidden="true">\
             <li>\
-                <a href="mailto:ruida.zeng@vanderbilt.edu">\
+                <a href="mailto:ruida_zeng@alumni.brown.edu">\
                     <i class="fas fa-envelope"></i>\
                 </a>\
             </li>\
