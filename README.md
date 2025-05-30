@@ -5,7 +5,7 @@
 
 <a href='https://www.ruidazeng.com'><img src='https://img.shields.io/badge/Website-Visit-gold'></a>
 <a href='https://ruidazeng.github.io'><img src='https://img.shields.io/badge/GitHub%20Pages-Deployment-blue?logo=github'></a>
-<a href='mailto:ruida.zeng@vanderbilt.edu'><img src='https://img.shields.io/badge/Contact-Email-red'></a>
+<a href='mailto:ruida_zeng@alumni.brown.edu'><img src='https://img.shields.io/badge/Contact-Email-red'></a>
 <a href='https://www.ruidazeng.com/contact.html'><img src='https://img.shields.io/badge/Contact-Visit%20Page-orange'></a>
 
 [**About**](#about) | [**Explore**](#explore) | [**Contact**](#contact)
