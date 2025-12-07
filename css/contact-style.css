@@ -14,17 +14,7 @@ body {
 }
 
 /* Style inputs */
-input[type=text], select, textarea {
-	font: 80% georgia, sans-serif;
-	width: 100%;
-	padding: 12px;
-	border: 1px solid #ccc;
-	margin-top: 6px;
-	margin-bottom: 16px;
-	resize: vertical;
-}
-
-input[type=email], select, textarea {
+input[type=text], input[type=email], select, textarea {
 	font: 80% georgia, sans-serif;
 	width: 100%;
 	padding: 12px;
