@@ -10,11 +10,33 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" crossorigin="anonymous">
-	<script src="js/lazysizes.js"></script>
-	<script src="js/jquery.js"></script>
-        <script src="js/bootstrap.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js" crossorigin="anonymous"></script>
-        <script src="js/year.js" defer></script>
+	<script src="js/lazysizes.js" defer></script>
+	<script src="js/jquery.js" defer></script>
+	<script src="js/bootstrap.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js" crossorigin="anonymous" defer></script>
+	<script src="js/year.js" defer></script>
+	<script>
+		window.addEventListener("load", function(){
+			window.cookieconsent.initialise({
+				"palette": {
+					"popup": {
+						"background": "#795548",
+						"text": "#fff"
+					},
+					"button": {
+						"background": "#fff",
+						"text": "#795548"
+					}
+				},
+				"theme": "classic",
+				"content": {
+					"message": "This website uses cookies to ensure you get the best experience on my website.",
+					"dismiss": "Got it!",
+					"link": "Learn more",
+					"href": "https://www.cookiesandyou.com"
+				}
+			})});
+	</script>
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
@@ -215,10 +237,10 @@
 			</div>
 		</div>
 	</section>
-        <footer class="site-footer">
-                <p class="ss-copyright">
-                        © Ruida Zeng <span class="current-year"></span>
-                </p>
-        </footer>
+	<footer class="site-footer">
+		<p class="ss-copyright">
+			© Ruida Zeng <span class="current-year"></span>
+		</p>
+	</footer>
 </body>
 </html>

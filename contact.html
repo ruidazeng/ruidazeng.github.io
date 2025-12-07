@@ -13,11 +13,33 @@
 	<link rel="stylesheet" type="text/css" href="css/contact-style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-	<script src="js/lazysizes.js"></script>
-	<script src="js/jquery.js"></script>
-        <script src="js/bootstrap.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js" crossorigin="anonymous"></script>
-        <script src="js/year.js" defer></script>
+	<script src="js/lazysizes.js" defer></script>
+	<script src="js/jquery.js" defer></script>
+	<script src="js/bootstrap.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js" crossorigin="anonymous" defer></script>
+	<script src="js/year.js" defer></script>
+	<script>
+		window.addEventListener("load", function(){
+			window.cookieconsent.initialise({
+				"palette": {
+					"popup": {
+						"background": "#795548",
+						"text": "#fff"
+					},
+					"button": {
+						"background": "#fff",
+						"text": "#795548"
+					}
+				},
+				"theme": "classic",
+				"content": {
+					"message": "This website uses cookies to ensure you get the best experience on my website.",
+					"dismiss": "Got it!",
+					"link": "Learn more",
+					"href": "https://www.cookiesandyou.com"
+				}
+			})});
+	</script>
 	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 	<style>
 		/* Add margin to push the content below the navbar */
@@ -89,7 +111,7 @@
 						<label for="name">Name</label>
 						<input type="text" id="name" required name="name" placeholder="Your name...">
 						<label for="email">Email</label>
-						<input type="text" id="email" required name="email" placeholder="Your email...">
+						<input type="email" id="email" required name="email" placeholder="Your email...">
 						<label for="subject">Subject</label>
 						<textarea id="subject" required name="subject" placeholder="Write something..." style="height:170px"></textarea>
 						<input type="submit" value="Submit">
@@ -100,10 +122,10 @@
 	</div>
 	<!-- End of Contact Page Content -->
 
-        <footer class="site-footer">
-                <p class="ss-copyright">
-                        © Ruida Zeng <span class="current-year"></span>
-                </p>
-        </footer>
+	<footer class="site-footer">
+		<p class="ss-copyright">
+			© Ruida Zeng <span class="current-year"></span>
+		</p>
+	</footer>
 </body>
 </html>
