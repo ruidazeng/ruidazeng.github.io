@@ -5,7 +5,7 @@
     <div class="media-body">\
         <h5 class="card-title"><a href="https://www.ruidazeng.com/">Ruida Zeng</a></h5>\
         <h6 class="card-subtitle">Computer Scientist</h6>\
-        <p class="card-text">My interests include artificial intelligence, applied cryptography, and decentralized finance & blockchains.</p>\
+        <p class="card-text">My interests include artificial intelligence and computer security.</p>\
         <ul class="network-icon" aria-hidden="true">\
             <li>\
                 <a href="mailto:ruida_zeng@alumni.brown.edu">\
