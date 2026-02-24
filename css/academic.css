@@ -33,7 +33,9 @@
     --breakpoint-lg: 992px;
     --breakpoint-xl: 1200px;
     --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --rz-stack-gap: clamp(1.25rem, 2vw, 2rem);
+    --rz-section-gap: clamp(0.75rem, 1.5vw, 1.25rem);
 }
 
 *,*::before,*::after {
@@ -11478,6 +11480,21 @@ ul.ul-edu li .description p.institution {
     display: block;
     position: relative;
     overflow: hidden
+}
+
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--rz-stack-gap);
+    margin-top: var(--rz-section-gap)
+}
+
+.projects-list .project-item {
+    margin-bottom: 0
+}
+
+.projects-list .media.stream-item {
+    margin-bottom: 0
 }
 
 .project-toolbar {
