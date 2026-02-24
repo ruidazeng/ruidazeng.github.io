@@ -17,11 +17,13 @@
                     <i class="fas fa-camera-retro"></i>\
                 </a>\
             </li>\
+            <!--\
             <li>\
                 <a href="https://www.linkedin.com/in/ruidazeng/" target="_blank" rel="noopener noreferrer">\
                     <i class="fab fa-linkedin"></i>\
                 </a>\
             </li>\
+            -->\
             <li>\
                 <a href="https://github.com/ruidazeng" target="_blank" rel="noopener noreferrer">\
                     <i class="fab fa-github"></i>\
