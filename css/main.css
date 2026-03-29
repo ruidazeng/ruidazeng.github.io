@@ -1728,7 +1728,9 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     .s-header__nav {
         min-height: 0;
         width: 100%;
-        margin: 6rem 6rem 8rem;
+        margin: 6rem auto 8rem;
+        padding: 0 6rem;
+        text-align: center;
     }
     .s-header__nav>li {
         float: none;
