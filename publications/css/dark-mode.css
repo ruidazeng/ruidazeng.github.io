@@ -613,3 +613,34 @@ body.dark .btn-outline-primary:not(:disabled):not(.disabled):active {
 [data-theme="dark"] .header-menu-toggle {
     background-color: rgba(30, 31, 41, 0.9);
 }
+
+/* Mobile nav overlay — needs opaque background so content doesn't bleed through */
+@media only screen and (max-width: 800px) {
+    .s-header {
+        z-index: 100 !important;
+    }
+
+    .s-header__nav-wrap {
+        z-index: 100;
+    }
+
+    [data-theme="light"] .s-header__nav-wrap {
+        background-color: rgba(255, 255, 255, 0.97);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+    }
+
+    [data-theme="dark"] .s-header__nav-wrap {
+        background-color: rgba(30, 31, 41, 0.97);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+    }
+
+    [data-theme="dark"] .s-header__nav > li {
+        border-bottom-color: rgba(255, 255, 255, 0.1);
+    }
+
+    [data-theme="dark"] .s-header__nav > li:first-child {
+        border-top-color: rgba(255, 255, 255, 0.15);
+    }
+}
