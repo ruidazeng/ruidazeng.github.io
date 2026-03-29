@@ -52,6 +52,36 @@ body.dark .theme-toggle-btn {
     color: #f8f8f2;
 }
 
+/* Blog nav toggle — match the uppercase nav link style */
+.s-header__nav li .theme-toggle-btn {
+    font-size: 15px;
+    padding: 0 15px;
+    line-height: 48px;
+    height: 48px;
+    vertical-align: middle;
+    opacity: 0.65;
+}
+
+.s-header__nav li .theme-toggle-btn:hover {
+    opacity: 1;
+}
+
+[data-theme="dark"] .s-header__nav li .theme-toggle-btn {
+    color: rgba(248, 248, 242, 0.7);
+}
+
+[data-theme="dark"] .s-header__nav li .theme-toggle-btn:hover {
+    color: #f8f8f2;
+}
+
+[data-theme="light"] .s-header__nav li .theme-toggle-btn {
+    color: #666;
+}
+
+[data-theme="light"] .s-header__nav li .theme-toggle-btn:hover {
+    color: #333;
+}
+
 /* --- Smooth transitions --- */
 body,
 body.dark,
@@ -68,12 +98,14 @@ footer,
  * ------------------------------------------------------------------- */
 
 /* Make backgrounds semi-transparent so starfield shows through */
-body.dark {
-    background: rgba(40, 42, 54, 0.92);
+body.dark,
+html[data-theme="dark"] body {
+    background: rgba(40, 42, 54, 0.92) !important;
 }
 
-body.dark .navbar {
-    background-color: rgba(30, 31, 41, 0.85);
+body.dark .navbar,
+[data-theme="dark"] .navbar {
+    background-color: rgba(30, 31, 41, 0.85) !important;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
 }
@@ -129,25 +161,30 @@ body.dark .navbar-collapse {
 }
 
 /* Home sections — semi-transparent for starfield */
-body.dark .home-section {
+body.dark .home-section,
+[data-theme="dark"] .home-section {
     background-color: rgba(39, 41, 53, 0.88) !important;
 }
 
-body.dark .home-section:nth-of-type(even) {
+body.dark .home-section:nth-of-type(even),
+[data-theme="dark"] .home-section:nth-of-type(even) {
     background-color: rgba(35, 37, 47, 0.92) !important;
 }
 
 /* Footer */
-body.dark .site-footer {
-    background-color: rgba(30, 31, 41, 0.9);
+body.dark .site-footer,
+[data-theme="dark"] .site-footer {
+    background-color: rgba(30, 31, 41, 0.9) !important;
     color: rgba(255, 255, 255, 0.54);
 }
 
-body.dark footer {
+body.dark footer,
+[data-theme="dark"] footer {
     color: rgba(255, 255, 255, 0.54);
 }
 
-body.dark footer p {
+body.dark footer p,
+[data-theme="dark"] footer p {
     color: rgba(255, 255, 255, 0.54);
 }
 
@@ -162,11 +199,11 @@ body.dark .network-icon li:hover a {
 
 /* Links */
 body.dark a {
-    color: #ad8b80;
+    color: #7eb8da;
 }
 
 body.dark a:hover {
-    color: #c9a99e;
+    color: #a3d1eb;
 }
 
 /* Contact page — override contact-style.css which sets .container bg and body color globally */
@@ -305,7 +342,7 @@ html[data-theme="light"] body {
 }
 
 [data-theme="dark"] .s-header::before {
-    background-color: #593f35;
+    background-color: #3d5a80;
 }
 
 [data-theme="dark"] .s-header__content {
@@ -350,12 +387,12 @@ html[data-theme="dark"] body {
 }
 
 [data-theme="dark"] a {
-    color: #ad8b80;
+    color: #7eb8da;
 }
 
 [data-theme="dark"] a:hover,
 [data-theme="dark"] a:focus {
-    color: #c9a99e;
+    color: #a3d1eb;
 }
 
 /* Blog content area */
@@ -377,7 +414,7 @@ html[data-theme="dark"] body {
 }
 
 [data-theme="dark"] .entry__content blockquote {
-    border-color: #593f35;
+    border-color: #3d5a80;
     color: #aaa;
 }
 
@@ -441,7 +478,7 @@ html[data-theme="dark"] body {
 
 /* Selection color */
 [data-theme="dark"] ::selection {
-    background: #593f35;
+    background: #3d5a80;
     color: #fff;
 }
 
