@@ -1385,7 +1385,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  * ------------------------------------------------------------------- */
 .s-header {
     width: 100%;
-    background-color: #ffffff;
+    background-color: transparent;
     position: relative;
 }
 
@@ -1402,15 +1402,10 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .s-header__content {
-    background-color: #ffffff;
-    background-image: url(../images/leaves.jpg);
-    background-size: 400px 256px;
-    background-repeat: no-repeat;
-    background-position: right bottom;
+    background-color: transparent;
     min-height: 30rem;
     padding-top: 12rem;
     padding-bottom: 8rem;
-    border-bottom: 1px dashed #efefef;
     position: relative;
 }
 
@@ -1702,7 +1697,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
         padding-top: 9.6rem;
         padding-bottom: 12rem;
         min-height: 0;
-        background-size: 310px 220px;
     }
     .header-menu-toggle {
         display: block;
@@ -1795,7 +1789,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 @media screen and (max-width:600px) {
     .s-header__content {
-        background-position: center top;
         text-align: center;
     }
     .s-header__logotext {
@@ -1836,7 +1829,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  *
  * ------------------------------------------------------------------- */
 .s-content {
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.35);
     padding: 4.4rem 0 3.6rem 0;
 }
 
