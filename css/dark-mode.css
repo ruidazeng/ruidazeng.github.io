@@ -122,9 +122,44 @@ body.dark a:hover {
     color: #c9a99e;
 }
 
-/* Contact page */
+/* Contact page — override contact-style.css which sets .container bg and body color globally */
+body.dark {
+    color: #f8f8f2 !important;
+}
+
+body.dark .navbar .container {
+    background-color: transparent !important;
+}
+
 body.dark .contact-page-container {
     color: #f8f8f2;
+}
+
+body.dark .contact-page-container .container {
+    background-color: rgba(35, 37, 47, 0.9) !important;
+}
+
+body.dark .contact-page-container label {
+    color: #f8f8f2;
+}
+
+body.dark .contact-page-container h2,
+body.dark .contact-page-container h3,
+body.dark .contact-page-container p {
+    color: #e0e0e0;
+}
+
+body.dark .contact-page-container input[type=text],
+body.dark .contact-page-container input[type=email],
+body.dark .contact-page-container textarea {
+    background-color: #44475a;
+    color: #f8f8f2;
+    border-color: #555;
+}
+
+body.dark .contact-page-container input[type=submit] {
+    background-color: #04AA6D;
+    color: #fff;
 }
 
 /* Cookie consent */
