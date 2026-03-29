@@ -55,12 +55,12 @@ body.dark .theme-toggle-btn {
 
 /* Blog nav toggle — match the uppercase nav link style */
 .s-header__nav li .theme-toggle-btn {
-    font-size: 15px;
+    font-size: 16px;
     padding: 0 15px;
     line-height: 48px;
     height: 48px;
     vertical-align: middle;
-    opacity: 0.65;
+    opacity: 1;
 }
 
 .s-header__nav li .theme-toggle-btn:hover {
@@ -68,19 +68,19 @@ body.dark .theme-toggle-btn {
 }
 
 [data-theme="dark"] .s-header__nav li .theme-toggle-btn {
-    color: rgba(248, 248, 242, 0.7);
-}
-
-[data-theme="dark"] .s-header__nav li .theme-toggle-btn:hover {
     color: #f8f8f2;
 }
 
+[data-theme="dark"] .s-header__nav li .theme-toggle-btn:hover {
+    color: #fff;
+}
+
 [data-theme="light"] .s-header__nav li .theme-toggle-btn {
-    color: #666;
+    color: #555;
 }
 
 [data-theme="light"] .s-header__nav li .theme-toggle-btn:hover {
-    color: #333;
+    color: #222;
 }
 
 /* --- Smooth transitions --- */
@@ -370,6 +370,11 @@ html[data-theme="light"] body {
 [data-theme="dark"] .s-header__nav li a:hover,
 [data-theme="dark"] .s-header__nav li.current a {
     color: #f8f8f2;
+}
+
+[data-theme="dark"] .s-header__nav li.current > a {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.15);
 }
 
 /* Blog body */
