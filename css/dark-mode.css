@@ -660,9 +660,31 @@ body.dark .btn-outline-primary:not(:disabled):not(.disabled):active {
     }
 
     [data-theme="light"] .s-header__nav-wrap {
-        background-color: rgba(255, 255, 255, 0.97);
+        background-color: rgba(255, 255, 255, 1);
         backdrop-filter: blur(16px);
         -webkit-backdrop-filter: blur(16px);
+    }
+
+    [data-theme="light"] .s-header__nav li a {
+        color: #333 !important;
+    }
+
+    [data-theme="light"] .s-header__nav li a:hover,
+    [data-theme="light"] .s-header__nav li a:focus {
+        color: #000 !important;
+    }
+
+    [data-theme="light"] .s-header__nav li.current > a {
+        color: #2a6496 !important;
+        background-color: rgba(42, 100, 150, 0.1);
+    }
+
+    [data-theme="light"] .s-header__nav > li {
+        border-bottom-color: rgba(0, 0, 0, 0.1);
+    }
+
+    [data-theme="light"] .s-header__nav > li:first-child {
+        border-top-color: rgba(0, 0, 0, 0.15);
     }
 
     [data-theme="dark"] .s-header__nav-wrap {
