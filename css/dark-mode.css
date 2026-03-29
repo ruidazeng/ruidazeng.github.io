@@ -235,7 +235,7 @@ body.dark .contact-page-container {
 }
 
 body.dark .contact-page-container {
-    background-color: rgba(35, 37, 47, 0.5) !important;
+    background-color: transparent !important;
 }
 
 body.dark .contact-page-container label {
@@ -336,10 +336,10 @@ html[data-theme="light"] body {
 }
 
 [data-theme="light"] .contact-page-container .container {
-    background-color: rgba(255, 255, 255, 0.5) !important;
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-    border-radius: 5px;
+    background-color: transparent !important;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border-radius: 0;
 }
 
 [data-theme="light"] .card {
