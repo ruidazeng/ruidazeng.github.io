@@ -114,7 +114,7 @@ footer,
 /* Make backgrounds semi-transparent so starfield shows through */
 body.dark,
 html[data-theme="dark"] body {
-    background: rgba(40, 42, 54, 0.92) !important;
+    background: transparent !important;
 }
 
 body.dark .navbar,
@@ -122,6 +122,7 @@ body.dark .navbar,
     background-color: rgba(30, 31, 41, 0.85) !important;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
+    box-shadow: none !important;
 }
 
 body.dark .navbar-light .navbar-brand {
@@ -174,21 +175,21 @@ body.dark .navbar-collapse {
     }
 }
 
-/* Home sections — semi-transparent for starfield */
+/* Home sections — transparent so starfield shows through consistently */
 body.dark .home-section,
 [data-theme="dark"] .home-section {
-    background-color: rgba(39, 41, 53, 0.88) !important;
+    background-color: transparent !important;
 }
 
 body.dark .home-section:nth-of-type(even),
 [data-theme="dark"] .home-section:nth-of-type(even) {
-    background-color: rgba(35, 37, 47, 0.92) !important;
+    background-color: transparent !important;
 }
 
 /* Footer */
 body.dark .site-footer,
 [data-theme="dark"] .site-footer {
-    background-color: rgba(30, 31, 41, 0.9) !important;
+    background-color: transparent !important;
     color: rgba(255, 255, 255, 0.54);
 }
 
@@ -234,7 +235,7 @@ body.dark .contact-page-container {
 }
 
 body.dark .contact-page-container .container {
-    background-color: rgba(35, 37, 47, 0.9) !important;
+    background-color: rgba(35, 37, 47, 0.5) !important;
 }
 
 body.dark .contact-page-container label {
@@ -352,7 +353,7 @@ html[data-theme="light"] body {
  * ------------------------------------------------------------------- */
 
 [data-theme="dark"] .s-header {
-    background-color: rgba(30, 31, 41, 0.9);
+    background-color: rgba(30, 31, 41, 0.5);
 }
 
 [data-theme="dark"] .s-header::before {
@@ -360,7 +361,7 @@ html[data-theme="light"] body {
 }
 
 [data-theme="dark"] .s-header__content {
-    background-color: rgba(30, 31, 41, 0.9);
+    background-color: rgba(30, 31, 41, 0.5);
     background-image: none;
 }
 
@@ -392,7 +393,7 @@ html[data-theme="light"] body {
 
 /* Blog body */
 html[data-theme="dark"] body {
-    background: rgba(40, 42, 54, 0.92);
+    background: rgba(40, 42, 54, 0.6);
     color: #ccc;
 }
 
@@ -416,7 +417,7 @@ html[data-theme="dark"] body {
 
 /* Blog content area */
 [data-theme="dark"] .s-content {
-    background: rgba(40, 42, 54, 0.88);
+    background: transparent;
 }
 
 [data-theme="dark"] .entry__header-title {
@@ -443,7 +444,7 @@ html[data-theme="dark"] body {
 
 /* Blog footer */
 [data-theme="dark"] #footer {
-    background-color: rgba(30, 31, 41, 0.9);
+    background-color: transparent;
     color: rgba(255, 255, 255, 0.54);
 }
 
