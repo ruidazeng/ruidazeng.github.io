@@ -211,12 +211,11 @@
 
     function drawSkyGradient() {
       var grad = ctx.createLinearGradient(0, 0, 0, height);
-      grad.addColorStop(0,    'rgba(120, 180, 230, 0.5)');
-      grad.addColorStop(0.25, 'rgba(140, 200, 240, 0.35)');
-      grad.addColorStop(0.5,  'rgba(165, 215, 245, 0.22)');
-      grad.addColorStop(0.75, 'rgba(190, 225, 248, 0.12)');
-      grad.addColorStop(0.92, 'rgba(210, 235, 250, 0.05)');
-      grad.addColorStop(1,    'rgba(230, 242, 255, 0)');
+      grad.addColorStop(0,    '#5b9bd5');
+      grad.addColorStop(0.3,  '#7ab8e0');
+      grad.addColorStop(0.55, '#9dcde8');
+      grad.addColorStop(0.8,  '#bddcee');
+      grad.addColorStop(1,    '#d4e8f4');
       ctx.fillStyle = grad;
       ctx.fillRect(0, 0, width, height);
     }

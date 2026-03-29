@@ -107,6 +107,22 @@ body.dark .navbar-light .navbar-toggler {
     border-color: rgba(248, 248, 242, 0.1);
 }
 
+/* Mobile navbar dropdown — dark mode */
+body.dark .navbar-collapse {
+    background-color: rgba(30, 31, 41, 0.95) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 0 0 8px 8px;
+}
+
+@media (min-width: 992px) {
+    body.dark .navbar-collapse {
+        background-color: transparent !important;
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+    }
+}
+
 /* Home sections — semi-transparent for starfield */
 body.dark .home-section {
     background-color: rgba(39, 41, 53, 0.88) !important;
@@ -210,23 +226,36 @@ html[data-theme="light"] body {
     -webkit-backdrop-filter: blur(12px);
 }
 
+/* Mobile navbar dropdown — needs readable background */
+[data-theme="light"] .navbar-collapse {
+    background-color: rgba(255, 255, 255, 0.92) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 0 0 8px 8px;
+}
+
+@media (min-width: 992px) {
+    [data-theme="light"] .navbar-collapse {
+        background-color: transparent !important;
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+    }
+}
+
+/* Content sections — fully transparent so sky shows through */
 [data-theme="light"] .home-section {
-    background-color: rgba(255, 255, 255, 0.45) !important;
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
+    background-color: transparent !important;
 }
 
 [data-theme="light"] .home-section:nth-of-type(even) {
-    background-color: rgba(234, 242, 250, 0.45) !important;
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
+    background-color: transparent !important;
 }
 
 [data-theme="light"] footer,
 [data-theme="light"] .site-footer {
-    background-color: rgba(255, 255, 255, 0.5) !important;
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    background-color: transparent !important;
+    margin-top: 0 !important;
+    color: rgba(0, 0, 0, 0.6);
 }
 
 /* News/publications/projects/contact page content areas */
