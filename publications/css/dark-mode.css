@@ -27,6 +27,11 @@ body > *:not(.sky-canvas) {
     z-index: 1;
 }
 
+/* Navbar must be above other content so mobile dropdown isn't blocked */
+#navbar-main {
+    z-index: 1040;
+}
+
 /* --- Theme toggle button --- */
 .theme-toggle-btn {
     background: none;
@@ -228,9 +233,9 @@ html[data-theme="light"] body {
 
 /* Mobile navbar dropdown — needs readable background */
 [data-theme="light"] .navbar-collapse {
-    background-color: rgba(255, 255, 255, 0.92) !important;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    background-color: rgba(255, 255, 255, 0.97) !important;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
     border-radius: 0 0 8px 8px;
 }
 
