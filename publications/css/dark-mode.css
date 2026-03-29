@@ -1,0 +1,335 @@
+/* ===================================================================
+ * Dark Mode & Sky Canvas Styles
+ *
+ * The Academic theme (academic.css) already provides .dark class styles.
+ * This file adds the sky canvas, smooth transitions, and supplementary
+ * dark mode styles for elements not covered by the built-in dark styles.
+ * ------------------------------------------------------------------- */
+
+/* --- Sky canvas (fixed background for all pages) --- */
+.sky-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Ensure page content sits above the canvas */
+body {
+    position: relative;
+}
+
+body > *:not(.sky-canvas) {
+    position: relative;
+    z-index: 1;
+}
+
+/* --- Smooth transitions --- */
+body,
+body.dark,
+.navbar,
+.site-footer,
+footer,
+.home-section,
+.card {
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* ===================================================================
+ * # Night mode (dark) — Academic pages
+ * ------------------------------------------------------------------- */
+
+/* Make backgrounds semi-transparent so starfield shows through */
+body.dark {
+    background: rgba(40, 42, 54, 0.92);
+}
+
+body.dark .navbar {
+    background-color: rgba(30, 31, 41, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+body.dark .navbar-light .navbar-brand {
+    color: #f8f8f2;
+}
+
+body.dark .navbar-light .navbar-brand:hover,
+body.dark .navbar-light .navbar-brand:focus {
+    color: #fff;
+}
+
+body.dark .navbar-light .navbar-nav .nav-link {
+    color: rgba(248, 248, 242, 0.7);
+}
+
+body.dark .navbar-light .navbar-nav .nav-link:hover,
+body.dark .navbar-light .navbar-nav .nav-link:focus {
+    color: #f8f8f2;
+}
+
+body.dark .navbar-light .navbar-nav .nav-link.active,
+body.dark .navbar-light .navbar-nav .active > .nav-link {
+    color: #f8f8f2;
+}
+
+body.dark .navbar-light .navbar-toggler {
+    color: rgba(248, 248, 242, 0.7);
+    border-color: rgba(248, 248, 242, 0.1);
+}
+
+/* Home sections — semi-transparent for starfield */
+body.dark .home-section {
+    background-color: rgba(39, 41, 53, 0.88) !important;
+}
+
+body.dark .home-section:nth-of-type(even) {
+    background-color: rgba(35, 37, 47, 0.92) !important;
+}
+
+/* Footer */
+body.dark .site-footer {
+    background-color: rgba(30, 31, 41, 0.9);
+    color: rgba(255, 255, 255, 0.54);
+}
+
+body.dark footer {
+    color: rgba(255, 255, 255, 0.54);
+}
+
+body.dark footer p {
+    color: rgba(255, 255, 255, 0.54);
+}
+
+/* Network/social icons */
+body.dark .network-icon li a {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+body.dark .network-icon li:hover a {
+    color: #fff;
+}
+
+/* Links */
+body.dark a {
+    color: #ad8b80;
+}
+
+body.dark a:hover {
+    color: #c9a99e;
+}
+
+/* Contact page */
+body.dark .contact-page-container {
+    color: #f8f8f2;
+}
+
+/* Cookie consent */
+body.dark .cc-window {
+    background-color: rgba(68, 71, 90, 0.95) !important;
+    color: #f8f8f2 !important;
+}
+
+/* ===================================================================
+ * # Day mode (light) — Academic pages
+ * Make backgrounds slightly transparent so clouds/sun show through
+ * ------------------------------------------------------------------- */
+
+[data-theme="light"] body:not(.dark) {
+    background: rgba(255, 255, 255, 0.88);
+}
+
+[data-theme="light"] .navbar {
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+[data-theme="light"] .home-section {
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+[data-theme="light"] .home-section:nth-of-type(even) {
+    background-color: rgba(234, 242, 250, 0.85);
+}
+
+[data-theme="light"] .site-footer {
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+/* ===================================================================
+ * # Blog pages (Keep It Simple theme) — Night mode
+ * ------------------------------------------------------------------- */
+
+[data-theme="dark"] .s-header {
+    background-color: rgba(30, 31, 41, 0.9);
+}
+
+[data-theme="dark"] .s-header::before {
+    background-color: #593f35;
+}
+
+[data-theme="dark"] .s-header__content {
+    background-color: rgba(30, 31, 41, 0.9);
+    background-image: none;
+}
+
+[data-theme="dark"] .s-header__logotext a {
+    color: #f8f8f2;
+}
+
+[data-theme="dark"] .s-header__tagline {
+    color: rgba(248, 248, 242, 0.6);
+}
+
+[data-theme="dark"] .s-header__nav-wrap {
+    background-color: rgba(39, 41, 53, 0.92);
+}
+
+[data-theme="dark"] .s-header__nav li a {
+    color: rgba(248, 248, 242, 0.7);
+}
+
+[data-theme="dark"] .s-header__nav li a:hover,
+[data-theme="dark"] .s-header__nav li.current a {
+    color: #f8f8f2;
+}
+
+/* Blog body */
+html[data-theme="dark"] body {
+    background: rgba(40, 42, 54, 0.92);
+    color: #ccc;
+}
+
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6 {
+    color: #e0e0e0;
+}
+
+[data-theme="dark"] a {
+    color: #ad8b80;
+}
+
+[data-theme="dark"] a:hover,
+[data-theme="dark"] a:focus {
+    color: #c9a99e;
+}
+
+/* Blog content area */
+[data-theme="dark"] .s-content {
+    background: rgba(40, 42, 54, 0.88);
+}
+
+[data-theme="dark"] .entry__header-title {
+    color: #f8f8f2;
+}
+
+[data-theme="dark"] .entry__meta {
+    color: rgba(248, 248, 242, 0.5);
+}
+
+[data-theme="dark"] .entry__content p,
+[data-theme="dark"] .entry__content li {
+    color: #ccc;
+}
+
+[data-theme="dark"] .entry__content blockquote {
+    border-color: #593f35;
+    color: #aaa;
+}
+
+[data-theme="dark"] .entry__content blockquote p {
+    color: #aaa;
+}
+
+/* Blog footer */
+[data-theme="dark"] #footer {
+    background-color: rgba(30, 31, 41, 0.9);
+    color: rgba(255, 255, 255, 0.54);
+}
+
+[data-theme="dark"] #footer a {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+[data-theme="dark"] .ss-copyright {
+    color: rgba(255, 255, 255, 0.54);
+}
+
+[data-theme="dark"] .ss-go-top a {
+    background-color: #44475a;
+    color: #f8f8f2;
+}
+
+/* Blog preloader */
+[data-theme="dark"] #preloader {
+    background-color: #282a36;
+}
+
+/* Forms */
+[data-theme="dark"] input,
+[data-theme="dark"] textarea,
+[data-theme="dark"] select {
+    background-color: #44475a;
+    color: #f8f8f2;
+    border-color: #555;
+}
+
+/* Code blocks */
+[data-theme="dark"] pre,
+[data-theme="dark"] code {
+    background-color: #44475a;
+    color: #8be9fd;
+}
+
+/* Horizontal rules */
+[data-theme="dark"] hr {
+    border-color: #44475a;
+}
+
+/* Images — subtle brightness adjustment at night */
+[data-theme="dark"] img {
+    opacity: 0.9;
+}
+
+[data-theme="dark"] img:hover {
+    opacity: 1;
+}
+
+/* Selection color */
+[data-theme="dark"] ::selection {
+    background: #593f35;
+    color: #fff;
+}
+
+/* ===================================================================
+ * # Blog pages (Keep It Simple theme) — Day mode
+ * Make backgrounds slightly transparent so sky shows through
+ * ------------------------------------------------------------------- */
+
+[data-theme="light"] .s-header {
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+[data-theme="light"] .s-header__content {
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+[data-theme="light"] .s-header__nav-wrap {
+    background-color: rgba(245, 244, 243, 0.85);
+}
+
+[data-theme="light"] .s-content {
+    background: rgba(255, 255, 255, 0.85);
+}
+
+[data-theme="light"] #footer {
+    background-color: rgba(255, 255, 255, 0.85);
+}
