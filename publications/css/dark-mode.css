@@ -512,3 +512,26 @@ html[data-theme="dark"] body {
 [data-theme="light"] #footer {
     background-color: rgba(255, 255, 255, 0.85);
 }
+
+/* Override blog theme brown (#795548) with sky-blue in light mode */
+[data-theme="light"] .s-header::before {
+    background-color: #2a6496;
+}
+
+[data-theme="light"] .s-header__logotext a {
+    color: #2a6496;
+}
+
+[data-theme="light"] .s-header__nav li.current > a {
+    color: #2a6496;
+}
+
+[data-theme="light"] .ss-go-top a {
+    background-color: #2a6496;
+}
+
+[data-theme="light"] .s-header__menu-toggle span::before,
+[data-theme="light"] .s-header__menu-toggle span::after,
+[data-theme="light"] .s-header__menu-toggle span {
+    background-color: #2a6496;
+}
