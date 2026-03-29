@@ -606,8 +606,10 @@ body.dark .btn-outline-primary:not(:disabled):not(.disabled):active {
     background-color: #2a6496;
 }
 
-[data-theme="light"] .s-header__menu-toggle span::before,
-[data-theme="light"] .s-header__menu-toggle span::after,
-[data-theme="light"] .s-header__menu-toggle span {
+[data-theme="light"] .header-menu-toggle {
     background-color: #2a6496;
+}
+
+[data-theme="dark"] .header-menu-toggle {
+    background-color: rgba(30, 31, 41, 0.9);
 }
