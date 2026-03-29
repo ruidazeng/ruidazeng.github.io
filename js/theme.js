@@ -31,10 +31,11 @@
         if (document.body) {
             document.body.classList.toggle('dark', dark);
         }
-        // Update toggle icon if it exists
-        var icon = document.getElementById('theme-toggle-icon');
-        if (icon) {
-            icon.className = dark ? 'fas fa-sun' : 'fas fa-moon';
+        // Update toggle icon — replace innerHTML since FontAwesome JS
+        // converts <i> to <svg> and SVG className is not a simple string
+        var btn = document.getElementById('theme-toggle');
+        if (btn) {
+            btn.innerHTML = '<i id="theme-toggle-icon" class="' + (dark ? 'fas fa-sun' : 'fas fa-moon') + '"></i>';
         }
         // Update aria-label
         var btn = document.getElementById('theme-toggle');
