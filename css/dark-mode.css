@@ -521,6 +521,7 @@ html[data-theme="dark"] body {
 [data-theme="light"] .s-header__nav-wrap {
     background-color: transparent;
     border-bottom: none;
+    top: 0;
 }
 
 [data-theme="light"] .s-header__nav li.current > a {
@@ -601,7 +602,7 @@ body.dark .btn-outline-primary:not(:disabled):not(.disabled):active {
 
 /* Override blog theme brown (#795548) with sky-blue in light mode */
 [data-theme="light"] .s-header::before {
-    background-color: #2a6496;
+    display: none;
 }
 
 [data-theme="light"] .s-header__logotext a {
