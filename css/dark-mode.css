@@ -27,6 +27,48 @@ body > *:not(.sky-canvas) {
     z-index: 1;
 }
 
+/* --- Theme toggle button --- */
+.theme-toggle-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.15rem;
+    padding: 0.5rem 0.7rem;
+    margin-left: 0.25rem;
+    color: rgba(0, 0, 0, 0.5);
+    transition: color 0.3s ease, transform 0.3s ease;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+}
+
+.theme-toggle-btn:hover {
+    color: rgba(0, 0, 0, 0.8);
+    transform: scale(1.15);
+}
+
+.theme-toggle-btn:focus {
+    outline: 2px solid #795548;
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+body.dark .theme-toggle-btn,
+[data-theme="dark"] .theme-toggle-btn {
+    color: rgba(248, 248, 242, 0.7);
+}
+
+body.dark .theme-toggle-btn:hover,
+[data-theme="dark"] .theme-toggle-btn:hover {
+    color: #f8f8f2;
+}
+
+/* Blog-theme toggle positioning */
+.s-header__nav .theme-toggle-btn {
+    display: inline-flex;
+    vertical-align: middle;
+}
+
 /* --- Smooth transitions --- */
 body,
 body.dark,
