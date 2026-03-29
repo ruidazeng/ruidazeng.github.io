@@ -247,6 +247,16 @@ html[data-theme="light"] body {
     }
 }
 
+/* Links — complement the blue sky */
+[data-theme="light"] a {
+    color: #2a6496;
+}
+
+[data-theme="light"] a:hover,
+[data-theme="light"] a:focus {
+    color: #1a4971;
+}
+
 /* Content sections — fully transparent so sky shows through */
 [data-theme="light"] .home-section {
     background-color: transparent !important;
