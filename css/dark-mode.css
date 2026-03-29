@@ -644,3 +644,8 @@ body.dark .btn-outline-primary:not(:disabled):not(.disabled):active {
         border-top-color: rgba(255, 255, 255, 0.15);
     }
 }
+
+/* --- Comment section dark mode --- */
+[data-theme="dark"] .comment__info .comment__author {
+    color: #ffffff;
+}
