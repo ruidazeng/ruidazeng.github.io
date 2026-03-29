@@ -20,6 +20,7 @@
 /* Ensure page content sits above the canvas */
 body {
     position: relative;
+    margin-top: 0 !important;
 }
 
 body > *:not(.sky-canvas) {
@@ -52,6 +53,49 @@ body.dark .theme-toggle-btn {
     color: #f8f8f2;
 }
 
+/* Blog nav toggle — override main.css button defaults and match nav style */
+.s-header__nav li .theme-toggle-btn {
+    font-size: 16px;
+    padding: 0 15px;
+    line-height: 48px;
+    height: 48px;
+    vertical-align: middle;
+    opacity: 1;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    margin: 0;
+    letter-spacing: 0;
+    text-transform: none;
+    font-weight: normal;
+}
+
+.s-header__nav li .theme-toggle-btn:hover,
+.s-header__nav li .theme-toggle-btn:focus {
+    background-color: transparent;
+    border: none;
+}
+
+.s-header__nav li .theme-toggle-btn:hover {
+    opacity: 1;
+}
+
+[data-theme="dark"] .s-header__nav li .theme-toggle-btn {
+    color: #f8f8f2;
+}
+
+[data-theme="dark"] .s-header__nav li .theme-toggle-btn:hover {
+    color: #fff;
+}
+
+[data-theme="light"] .s-header__nav li .theme-toggle-btn {
+    color: #555;
+}
+
+[data-theme="light"] .s-header__nav li .theme-toggle-btn:hover {
+    color: #222;
+}
+
 /* --- Smooth transitions --- */
 body,
 body.dark,
@@ -68,12 +112,14 @@ footer,
  * ------------------------------------------------------------------- */
 
 /* Make backgrounds semi-transparent so starfield shows through */
-body.dark {
-    background: rgba(40, 42, 54, 0.92);
+body.dark,
+html[data-theme="dark"] body {
+    background: rgba(40, 42, 54, 0.92) !important;
 }
 
-body.dark .navbar {
-    background-color: rgba(30, 31, 41, 0.85);
+body.dark .navbar,
+[data-theme="dark"] .navbar {
+    background-color: rgba(30, 31, 41, 0.85) !important;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
 }
@@ -129,25 +175,30 @@ body.dark .navbar-collapse {
 }
 
 /* Home sections — semi-transparent for starfield */
-body.dark .home-section {
+body.dark .home-section,
+[data-theme="dark"] .home-section {
     background-color: rgba(39, 41, 53, 0.88) !important;
 }
 
-body.dark .home-section:nth-of-type(even) {
+body.dark .home-section:nth-of-type(even),
+[data-theme="dark"] .home-section:nth-of-type(even) {
     background-color: rgba(35, 37, 47, 0.92) !important;
 }
 
 /* Footer */
-body.dark .site-footer {
-    background-color: rgba(30, 31, 41, 0.9);
+body.dark .site-footer,
+[data-theme="dark"] .site-footer {
+    background-color: rgba(30, 31, 41, 0.9) !important;
     color: rgba(255, 255, 255, 0.54);
 }
 
-body.dark footer {
+body.dark footer,
+[data-theme="dark"] footer {
     color: rgba(255, 255, 255, 0.54);
 }
 
-body.dark footer p {
+body.dark footer p,
+[data-theme="dark"] footer p {
     color: rgba(255, 255, 255, 0.54);
 }
 
@@ -162,11 +213,11 @@ body.dark .network-icon li:hover a {
 
 /* Links */
 body.dark a {
-    color: #ad8b80;
+    color: #7eb8da;
 }
 
 body.dark a:hover {
-    color: #c9a99e;
+    color: #a3d1eb;
 }
 
 /* Contact page — override contact-style.css which sets .container bg and body color globally */
@@ -305,7 +356,7 @@ html[data-theme="light"] body {
 }
 
 [data-theme="dark"] .s-header::before {
-    background-color: #593f35;
+    background-color: #3d5a80;
 }
 
 [data-theme="dark"] .s-header__content {
@@ -334,6 +385,11 @@ html[data-theme="light"] body {
     color: #f8f8f2;
 }
 
+[data-theme="dark"] .s-header__nav li.current > a {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
 /* Blog body */
 html[data-theme="dark"] body {
     background: rgba(40, 42, 54, 0.92);
@@ -350,12 +406,12 @@ html[data-theme="dark"] body {
 }
 
 [data-theme="dark"] a {
-    color: #ad8b80;
+    color: #7eb8da;
 }
 
 [data-theme="dark"] a:hover,
 [data-theme="dark"] a:focus {
-    color: #c9a99e;
+    color: #a3d1eb;
 }
 
 /* Blog content area */
@@ -377,7 +433,7 @@ html[data-theme="dark"] body {
 }
 
 [data-theme="dark"] .entry__content blockquote {
-    border-color: #593f35;
+    border-color: #3d5a80;
     color: #aaa;
 }
 
@@ -441,7 +497,7 @@ html[data-theme="dark"] body {
 
 /* Selection color */
 [data-theme="dark"] ::selection {
-    background: #593f35;
+    background: #3d5a80;
     color: #fff;
 }
 
@@ -468,4 +524,123 @@ html[data-theme="dark"] body {
 
 [data-theme="light"] #footer {
     background-color: rgba(255, 255, 255, 0.85);
+}
+
+/* Override brown (#795548) buttons with sky-blue — light mode */
+[data-theme="light"] .btn-outline-primary {
+    color: #2a6496;
+    border-color: #2a6496;
+}
+
+[data-theme="light"] .btn-outline-primary:hover {
+    color: #fff;
+    background-color: #2a6496;
+    border-color: #2a6496;
+}
+
+[data-theme="light"] .btn-outline-primary:focus,
+[data-theme="light"] .btn-outline-primary.focus {
+    box-shadow: 0 0 0 .2rem rgba(42, 100, 150, 0.5);
+}
+
+[data-theme="light"] .btn-outline-primary:not(:disabled):not(.disabled):active,
+[data-theme="light"] .btn-outline-primary:not(:disabled):not(.disabled).active {
+    color: #fff;
+    background-color: #1a4971;
+    border-color: #1a4971;
+}
+
+/* Override brown (#795548) buttons — dark mode */
+[data-theme="dark"] .btn-outline-primary,
+body.dark .btn-outline-primary {
+    color: #7eb8da;
+    border-color: #7eb8da;
+}
+
+[data-theme="dark"] .btn-outline-primary:hover,
+body.dark .btn-outline-primary:hover {
+    color: #fff;
+    background-color: #3d6d8e;
+    border-color: #3d6d8e;
+}
+
+[data-theme="dark"] .btn-outline-primary:focus,
+body.dark .btn-outline-primary:focus {
+    box-shadow: 0 0 0 .2rem rgba(126, 184, 218, 0.4);
+}
+
+[data-theme="dark"] .btn-outline-primary:not(:disabled):not(.disabled):active,
+body.dark .btn-outline-primary:not(:disabled):not(.disabled):active {
+    color: #fff;
+    background-color: #2a6496;
+    border-color: #2a6496;
+}
+
+/* Cookie consent banner — override brown */
+.cc-window.cc-banner {
+    background-color: #2a6496 !important;
+}
+
+.cc-btn.cc-dismiss {
+    color: #2a6496 !important;
+}
+
+/* Override blog theme brown (#795548) with sky-blue in light mode */
+[data-theme="light"] .s-header::before {
+    background-color: #2a6496;
+}
+
+[data-theme="light"] .s-header__logotext a {
+    color: #2a6496;
+}
+
+[data-theme="light"] .s-header__tagline {
+    color: #555;
+}
+
+[data-theme="light"] .s-header__nav li.current > a {
+    color: #2a6496;
+}
+
+[data-theme="light"] .ss-go-top a {
+    background-color: #2a6496;
+}
+
+[data-theme="light"] .header-menu-toggle {
+    background-color: #2a6496;
+}
+
+[data-theme="dark"] .header-menu-toggle {
+    background-color: rgba(30, 31, 41, 0.9);
+}
+
+/* Mobile nav overlay — needs opaque background so content doesn't bleed through */
+@media only screen and (max-width: 800px) {
+    .s-header {
+        z-index: 100 !important;
+    }
+
+    .s-header__nav-wrap {
+        z-index: 100;
+    }
+
+    [data-theme="light"] .s-header__nav-wrap {
+        background-color: rgba(255, 255, 255, 0.97);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+    }
+
+    [data-theme="dark"] .s-header__nav-wrap {
+        background-color: rgba(30, 31, 41, 0.97);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+    }
+
+    [data-theme="dark"] .s-header__nav > li {
+        border-bottom-color: rgba(255, 255, 255, 0.1);
+    }
+
+    [data-theme="dark"] .s-header__nav > li:first-child {
+        border-top-color: rgba(255, 255, 255, 0.15);
+    }
 }
