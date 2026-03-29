@@ -32,41 +32,19 @@ body > *:not(.sky-canvas) {
     background: none;
     border: none;
     cursor: pointer;
-    font-size: 1.15rem;
-    padding: 0.5rem 0.7rem;
-    margin-left: 0.25rem;
-    color: rgba(0, 0, 0, 0.5);
-    transition: color 0.3s ease, transform 0.3s ease;
-    line-height: 1;
-    display: flex;
-    align-items: center;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    color: inherit;
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
 }
 
 .theme-toggle-btn:hover {
-    color: rgba(0, 0, 0, 0.8);
-    transform: scale(1.15);
+    opacity: 1;
 }
 
-.theme-toggle-btn:focus {
-    outline: 2px solid #795548;
-    outline-offset: 2px;
-    border-radius: 4px;
-}
-
-body.dark .theme-toggle-btn,
-[data-theme="dark"] .theme-toggle-btn {
-    color: rgba(248, 248, 242, 0.7);
-}
-
-body.dark .theme-toggle-btn:hover,
-[data-theme="dark"] .theme-toggle-btn:hover {
+body.dark .theme-toggle-btn {
     color: #f8f8f2;
-}
-
-/* Blog-theme toggle positioning */
-.s-header__nav .theme-toggle-btn {
-    display: inline-flex;
-    vertical-align: middle;
 }
 
 /* --- Smooth transitions --- */
@@ -104,18 +82,24 @@ body.dark .navbar-light .navbar-brand:focus {
     color: #fff;
 }
 
-body.dark .navbar-light .navbar-nav .nav-link {
-    color: rgba(248, 248, 242, 0.7);
+body.dark .navbar-light .navbar-nav .nav-link,
+body.dark .navbar .navbar-nav .nav-link,
+body.dark #navbar-main .main-menu-item ul li .nav-link {
+    color: rgba(248, 248, 242, 0.7) !important;
 }
 
 body.dark .navbar-light .navbar-nav .nav-link:hover,
-body.dark .navbar-light .navbar-nav .nav-link:focus {
-    color: #f8f8f2;
+body.dark .navbar-light .navbar-nav .nav-link:focus,
+body.dark .navbar .navbar-nav .nav-link:hover,
+body.dark .navbar .navbar-nav .nav-link:focus {
+    color: #f8f8f2 !important;
 }
 
 body.dark .navbar-light .navbar-nav .nav-link.active,
-body.dark .navbar-light .navbar-nav .active > .nav-link {
-    color: #f8f8f2;
+body.dark .navbar-light .navbar-nav .active > .nav-link,
+body.dark .navbar .navbar-nav .nav-link.active,
+body.dark #navbar-main .main-menu-item ul li .nav-link.active {
+    color: #f8f8f2 !important;
 }
 
 body.dark .navbar-light .navbar-toggler {
@@ -212,29 +196,60 @@ body.dark .cc-window {
 
 /* ===================================================================
  * # Day mode (light) — Academic pages
- * Make backgrounds slightly transparent so clouds/sun show through
+ * Transparent backgrounds so sky canvas shows through
  * ------------------------------------------------------------------- */
 
-[data-theme="light"] body:not(.dark) {
-    background: rgba(255, 255, 255, 0.88);
+[data-theme="light"] body:not(.dark),
+html[data-theme="light"] body {
+    background: transparent !important;
 }
 
 [data-theme="light"] .navbar {
-    background-color: rgba(255, 255, 255, 0.85);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.55) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 }
 
 [data-theme="light"] .home-section {
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(255, 255, 255, 0.45) !important;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
 }
 
 [data-theme="light"] .home-section:nth-of-type(even) {
-    background-color: rgba(234, 242, 250, 0.85);
+    background-color: rgba(234, 242, 250, 0.45) !important;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
 }
 
+[data-theme="light"] footer,
 [data-theme="light"] .site-footer {
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(255, 255, 255, 0.5) !important;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+/* News/publications/projects/contact page content areas */
+[data-theme="light"] .container {
+    background-color: transparent !important;
+}
+
+/* Contact page — override contact-style.css body background */
+[data-theme="light"] .contact-page-container {
+    background-color: transparent !important;
+}
+
+[data-theme="light"] .contact-page-container .container {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border-radius: 5px;
+}
+
+[data-theme="light"] .card {
+    background-color: rgba(255, 255, 255, 0.6) !important;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
 }
 
 /* ===================================================================
