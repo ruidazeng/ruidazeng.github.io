@@ -2590,7 +2590,13 @@ button::-moz-focus-inner, input::-moz-focus-inner {
         padding-left: 0;
     }
     .comment__avatar {
-        display: none;
+        position: relative;
+        display: inline-block;
+        margin-bottom: 1rem;
+    }
+    .comment__avatar img {
+        height: 3.6rem;
+        width: 3.6rem;
     }
     .comment ul.children li {
         margin-top: calc(3.2rem + 0rem);
