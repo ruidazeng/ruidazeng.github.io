@@ -161,8 +161,19 @@
 
     /* --- Drawing functions --- */
 
+    function drawNightGradient() {
+      var grad = ctx.createLinearGradient(0, 0, 0, height);
+      grad.addColorStop(0,    '#0a0e1a');
+      grad.addColorStop(0.3,  '#111827');
+      grad.addColorStop(0.6,  '#151c2e');
+      grad.addColorStop(1,    '#1a2236');
+      ctx.fillStyle = grad;
+      ctx.fillRect(0, 0, width, height);
+    }
+
     function drawStars(time) {
       ctx.clearRect(0, 0, width, height);
+      drawNightGradient();
 
       for (var c = 0; c < placedConstellations.length; c++) {
         var con = placedConstellations[c];

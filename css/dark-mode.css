@@ -509,23 +509,47 @@ html[data-theme="dark"] body {
  * ------------------------------------------------------------------- */
 
 [data-theme="light"] .s-header {
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: transparent;
 }
 
 [data-theme="light"] .s-header__content {
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: transparent;
+    background-image: none;
+    border-bottom: none;
 }
 
 [data-theme="light"] .s-header__nav-wrap {
-    background-color: rgba(245, 244, 243, 0.85);
+    background-color: rgba(30, 31, 41, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    top: 0;
+}
+
+[data-theme="light"] .s-header__nav li a {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+[data-theme="light"] .s-header__nav li a:hover,
+[data-theme="light"] .s-header__nav li a:focus {
+    color: #ffffff;
+}
+
+[data-theme="light"] .s-header__nav li.current > a {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-left: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-bottom: none !important;
+    color: #ffffff;
 }
 
 [data-theme="light"] .s-content {
-    background: rgba(255, 255, 255, 0.85);
+    background: transparent;
 }
 
 [data-theme="light"] #footer {
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: transparent;
 }
 
 /* Override brown (#795548) buttons with sky-blue — light mode */
@@ -589,7 +613,7 @@ body.dark .btn-outline-primary:not(:disabled):not(.disabled):active {
 
 /* Override blog theme brown (#795548) with sky-blue in light mode */
 [data-theme="light"] .s-header::before {
-    background-color: #2a6496;
+    display: none;
 }
 
 [data-theme="light"] .s-header__logotext a {
@@ -601,7 +625,7 @@ body.dark .btn-outline-primary:not(:disabled):not(.disabled):active {
 }
 
 [data-theme="light"] .s-header__nav li.current > a {
-    color: #2a6496;
+    color: #ffffff;
 }
 
 [data-theme="light"] .ss-go-top a {
