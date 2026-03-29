@@ -20,6 +20,7 @@
 /* Ensure page content sits above the canvas */
 body {
     position: relative;
+    margin-top: 0 !important;
 }
 
 body > *:not(.sky-canvas) {
