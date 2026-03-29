@@ -5,8 +5,12 @@ body {
 	background: #fff url("../assets/floral.jpg");
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
-	margin: 20px;
+	margin: 0;
 	padding: 0;
+}
+
+.contact-page-container {
+	padding: 0 20px 20px;
 }
 
 * {
