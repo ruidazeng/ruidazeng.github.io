@@ -513,7 +513,7 @@ html[data-theme="dark"] body {
     background-color: rgba(255, 255, 255, 0.85);
 }
 
-/* Override brown (#795548) buttons with sky-blue */
+/* Override brown (#795548) buttons with sky-blue — light mode */
 [data-theme="light"] .btn-outline-primary {
     color: #2a6496;
     border-color: #2a6496;
@@ -537,6 +537,41 @@ html[data-theme="dark"] body {
     border-color: #1a4971;
 }
 
+/* Override brown (#795548) buttons — dark mode */
+[data-theme="dark"] .btn-outline-primary,
+body.dark .btn-outline-primary {
+    color: #7eb8da;
+    border-color: #7eb8da;
+}
+
+[data-theme="dark"] .btn-outline-primary:hover,
+body.dark .btn-outline-primary:hover {
+    color: #fff;
+    background-color: #3d6d8e;
+    border-color: #3d6d8e;
+}
+
+[data-theme="dark"] .btn-outline-primary:focus,
+body.dark .btn-outline-primary:focus {
+    box-shadow: 0 0 0 .2rem rgba(126, 184, 218, 0.4);
+}
+
+[data-theme="dark"] .btn-outline-primary:not(:disabled):not(.disabled):active,
+body.dark .btn-outline-primary:not(:disabled):not(.disabled):active {
+    color: #fff;
+    background-color: #2a6496;
+    border-color: #2a6496;
+}
+
+/* Cookie consent banner — override brown */
+.cc-window.cc-banner {
+    background-color: #2a6496 !important;
+}
+
+.cc-btn.cc-dismiss {
+    color: #2a6496 !important;
+}
+
 /* Override blog theme brown (#795548) with sky-blue in light mode */
 [data-theme="light"] .s-header::before {
     background-color: #2a6496;
@@ -544,6 +579,10 @@ html[data-theme="dark"] body {
 
 [data-theme="light"] .s-header__logotext a {
     color: #2a6496;
+}
+
+[data-theme="light"] .s-header__tagline {
+    color: #555;
 }
 
 [data-theme="light"] .s-header__nav li.current > a {
