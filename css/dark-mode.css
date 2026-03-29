@@ -353,16 +353,17 @@ html[data-theme="light"] body {
  * ------------------------------------------------------------------- */
 
 [data-theme="dark"] .s-header {
-    background-color: rgba(30, 31, 41, 0.5);
+    background-color: transparent;
 }
 
 [data-theme="dark"] .s-header::before {
-    background-color: #3d5a80;
+    display: none;
 }
 
 [data-theme="dark"] .s-header__content {
-    background-color: rgba(30, 31, 41, 0.5);
+    background-color: transparent;
     background-image: none;
+    border-bottom: none;
 }
 
 [data-theme="dark"] .s-header__logotext a {
@@ -374,7 +375,7 @@ html[data-theme="light"] body {
 }
 
 [data-theme="dark"] .s-header__nav-wrap {
-    background-color: rgba(39, 41, 53, 0.92);
+    background-color: transparent;
 }
 
 [data-theme="dark"] .s-header__nav li a {
