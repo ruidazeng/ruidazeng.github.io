@@ -3,8 +3,6 @@
 <head>
 	<title>Ruida Zeng | Computer Scientist</title>
 	<meta charset="utf-8">
-	<meta name="author" content="Ruida Zeng">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="description" content="Ruida Zeng is a Computer Scientist with interests in Artificial Intelligence and Computer Security." />
 	<meta name="keywords" content="Ruida Zeng, Computer Science, Artificial Intelligence, Computer Security" />
 	<meta name="google-site-verification" content="k_ni1gDEzK4oEMPZsR6TGgKQlUf0aoBxZgzdj1fQvh0" />
@@ -20,79 +18,13 @@
 	<meta name="twitter:title" content="Ruida Zeng | Computer Scientist" />
 	<meta name="twitter:description" content="Ruida Zeng is a Computer Scientist with interests in Artificial Intelligence and Computer Security." />
 	<meta name="twitter:image" content="https://www.ruidazeng.com/images/byx_optimized.jpg" />
-	<link rel="icon" href="images/icons/squirrel-icon.png" type="image/icon type">
 	<script src="js/theme.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/academic.css">
-	<link rel="stylesheet" type="text/css" href="css/dark-mode.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" crossorigin="anonymous">
-	<script src="js/lazysizes.js" defer></script>
-	<script src="js/jquery.js" defer></script>
-	<script src="js/bootstrap.js" defer></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js" crossorigin="anonymous" defer></script>
-	<script src="js/year.js" defer></script>
-	<script src="js/sky.js" defer></script>
-	<script>
-		window.addEventListener("load", function(){
-			window.cookieconsent.initialise({
-				"palette": {
-					"popup": {
-						"background": "#5b8fb9",
-						"text": "#fff"
-					},
-					"button": {
-						"background": "#fff",
-						"text": "#5b8fb9"
-					}
-				},
-				"theme": "classic",
-				"content": {
-					"message": "This website uses cookies to ensure you get the best experience on my website.",
-					"dismiss": "Got it!",
-					"link": "Learn more",
-					"href": "https://www.cookiesandyou.com"
-				}
-			})});
-		</script>
+	<script src="js/components.js"></script>
+	<script>SiteComponents.academicHead({})</script>
 </head>
 <body>
-	<canvas class="sky-canvas" aria-hidden="true"></canvas>
-	<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main" aria-label="Main navigation">
-		<div class="container">
-			<div class="d-none d-lg-inline-flex">
-				<a class="navbar-brand" href="https://www.ruidazeng.com">Ruida Zeng</a>
-			</div>
-			<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-				<span><i class="fas fa-bars"></i></span>
-			</button>
-			<div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-				<a class="navbar-brand" href="https://www.ruidazeng.com">Ruida Zeng</a>
-			</div>
-			<div class="navbar-collapse main-menu-item justify-content-end collapse" id="navbar-content">
-				<ul class="navbar-nav d-md-inline-flex">
-					<li class="nav-item">
-						<a class="nav-link active" href="index.html" aria-current="page"><span>Home</span></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="news.html"><span>News</span></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="publications.html"><span>Publications</span></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="projects.html"><span>Projects</span></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="blogs.html"><span>Blogs</span></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="contact.html"><span>Contact</span></a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+	<script>document.write(SiteComponents.skyCanvas())</script>
+	<script>document.write(SiteComponents.academicNav('home'))</script>
 	<section id="about" class="home-section wg-about">
 		<div class="container">
 			<div class="row">
@@ -109,28 +41,11 @@
 									<i class="fas fa-envelope fa-2x"></i>
 								</a>
 							</li>
-							<!-- <li>
-								<a href="https://stackoverflow.com/users/8173152/ruida-z" target="_blank" rel="noopener noreferrer">
-									<i class = "fab fa-stack-overflow fa-2x"></i>
-								</a>
-							</li> -->
 							<li>
 								<a href="https://instagram.com/ruidaaa" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
 									<i class="fas fa-camera-retro fa-2x"></i>
 								</a>
 							</li>
-							<!--
-							<li>
-								<a href="https://x.com/ruidazeng" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-									<i class="fab fa-twitter fa-2x"></i>
-								</a>
-							</li>
-							<li>
-								<a href="https://www.linkedin.com/in/ruidazeng/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-									<i class="fab fa-linkedin fa-2x"></i>
-								</a>
-							</li>
-							-->
 							<li>
 								<a href="https://github.com/ruidazeng" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
 									<i class="fab fa-github fa-2x"></i>
@@ -141,19 +56,12 @@
 									<i class="ai ai-google-scholar ai-2x"></i>
 								</a>
 							</li>
-<!-- 								<li>
-								<a href="files/resume.pdf" target="_blank" rel="noopener noreferrer">
-									<i class="ai ai-cv ai-2x"></i>
-								</a>
-							</li> -->
 						</ul>
 					</div>
 				</div>
 				<div class="col-12 col-lg-8">
 					<h1>Biography</h1>
 					<p>Hi, my name is Ruida Zeng. Welcome to my website!</p>
-					<!-- <p>I am currently working as a Software Engineer. Previously, I worked as an AI Engineer &amp; Member of Technical Staff at a Stealth Startup (YC W23).</p> -->
-					<!-- I am currently a graduate student studying computer science at Brown University in Providence, Rhode Island. -->
 					<p>This is a place where you can keep in touch with my latest research news, publications, and projects. You can also read my blogs where I keep some of my personal thoughts, book and movie reviews, and occasionally delicious recipes.</p>
 					<p>If you have any questions about me, please don't hesitate to contact me, I'll be glad to answer you.</p>
 					<div class="row">
@@ -190,11 +98,6 @@
 			</div>
 		</div>
 	</section>
-	<footer class="site-footer">
-		<p class="ss-copyright">
-			© Ruida Zeng <span class="current-year"></span>
-		</p>
-	</footer>
+	<script>document.write(SiteComponents.academicFooter())</script>
 </body>
-
 </html>

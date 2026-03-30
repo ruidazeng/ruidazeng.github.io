@@ -10778,6 +10778,28 @@ article {
     margin: 0 auto 0 auto
 }
 
+.pub-back {
+    display: inline-block;
+    font-size: 0.95rem;
+    color: rgba(0,0,0,0.54);
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+    transition: color 0.3s ease
+}
+
+.pub-back:hover {
+    color: rgba(0,0,0,0.87);
+    text-decoration: none
+}
+
+.dark .pub-back {
+    color: rgba(255,255,255,0.5)
+}
+
+.dark .pub-back:hover {
+    color: rgba(255,255,255,0.87)
+}
+
 .page-subtitle {
     font-size: 1.15rem;
     color: rgba(0,0,0,0.54);

@@ -3,93 +3,32 @@
 <head>
     <meta charset="utf-8">
     <title>Graduated from Vandy!!!</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="../images/icons/squirrel-icon.png" type="image/icon type">
     <script src="../js/theme.js"></script>
-    <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/dark-mode.css">
-    <script src="../js/modernizr.js"></script>
-    <script defer src="../js/fontawesome/all.min.js"></script>
-    <script src="../js/sky.js" defer></script>
+    <script src="../js/components.js"></script>
+    <script>SiteComponents.blogHead({pathPrefix: '../'})</script>
 </head>
 
 <body id="top">
-    <canvas class="sky-canvas" aria-hidden="true"></canvas>
+    <script>document.write(SiteComponents.skyCanvas())</script>
+    <script>document.write(SiteComponents.blogPreloader())</script>
+    <script>document.write(SiteComponents.blogHeader('blogs', '../'))</script>
 
-    <!-- preloader
-    ================================================== -->
-    <div id="preloader">
-        <div id="loader" class="dots-fade">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>
-
-    <!-- Header
-    ================================================== -->
-    <header class="s-header">
-
-        <div class="row">
-            <div class="s-header__content column">
-                <div class="s-header__brand">
-                    <h1 class="s-header__logotext">
-                        <a href="../blogs.html" title="">Ruida's Room</a>
-                    </h1>
-                    <p class="s-header__tagline">Private thoughts, book & movie reviews, and yummy recipes.</p>
-                </div>
-            </div>
-        </div> <!-- end row -->
-
-        <nav class="s-header__nav-wrap">
-
-          <div class="row">
-
-               <ul class="s-header__nav">
-                   <li><a href="../index.html">Home</a></li>
-                   <li><a href="../news.html">News</a></li>
-                   <li><a href="../publications.html">Publications</a></li>
-                   <li><a href="../projects.html">Projects</a></li>
-                   <li class="current"><a href="../blogs.html">Blogs</a></li>
-                   <li><a href="../contact.html">Contact</a></li>
-               </ul>
-
-           </div>
-
-       </nav>
-
-        <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
-
-    </header>
-
-    <!-- Content
-    ================================================== -->
     <div class="s-content">
-
         <div class="row">
-
             <div id="main" class="s-content__main large-8 column">
-
                 <article class="entry">
-
                     <header class="entry__header">
-
+                        <a href="../blogs.html" class="entry__back">&larr; Back to Blogs</a>
                         <h2 class="entry__title h1">
                             <a href="blog-1215-2021.html" title="Graduated from Vandy!!!">Graduated from Vandy!!!</a>
                         </h2>
-
                         <div class="entry__meta">
                             <ul>
                                 <li>December 15, 2021</li>
                                 <li>Ruida Zeng</li>
                             </ul>
                         </div>
-
                     </header>
-
                     <div class="entry__content">
                         <p>
                             Today I took the last exam of my undergraduate college career. The campus was peaceful
@@ -111,16 +50,12 @@
                                  sizes="(max-width: 500px) 100vw, 500px" alt="vandy">
                         </div>
                     </div>
-
                 </article>
-
-            </div> <!-- end entry -->
+            </div>
 
             <div id="sidebar" class="s-content__sidebar large-4 column">
-
                 <div class="widget widget_tags">
                     <h3 class="h6">Post Tags</h3>
-
                     <div class="tagcloud group">
                         <a href="#0">Life</a>
                         <a href="#0">Graduation</a>
@@ -128,48 +63,17 @@
                         <a href="#0">College</a>
                     </div>
                 </div>
-
                 <div class="widget widget_popular">
                     <h3 class="h6">Other Posts</h3>
                     <ul class="link-list">
                         <li><a href="blog-0526-2024.html">Graduated from Brown!!!</a></li>
                     </ul>
                 </div>
-
-            </div> <!-- end sidebar -->
-
-        </div> <!-- end row -->
-
-    </div> <!-- end content-wrap -->
-
-
-    <!-- Footer
-    ================================================== -->
-    <footer class="s-footer">
-
-        <div class="row s-footer__bottom">
-            <div class="column">
-                <div class="ss-copyright">
-                    <span>© Ruida Zeng 2025</span>
-                    <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
-                </div>
             </div>
         </div>
+    </div>
 
-        <div class="ss-go-top">
-            <a class="smoothscroll" title="Back to Top" href="#top">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0l8 9h-6v15h-4v-15h-6z"/></svg>
-            </a>
-        </div>
-
-    </footer>
-
-
-    <!-- Java Script
-    ================================================== -->
-    <script src="../js/jquery-3.2.1.min.js"></script>
-    <script src="../js/main.js"></script>
-
+    <script>document.write(SiteComponents.blogFooterSimple())</script>
+    <script>SiteComponents.blogBottomScripts('../')</script>
 </body>
-
 </html>

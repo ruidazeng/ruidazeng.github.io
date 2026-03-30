@@ -3,84 +3,25 @@
 <head>
     <meta charset="utf-8">
     <title>Cantonese Food Review (Part 1)</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="../images/icons/squirrel-icon.png" type="image/icon type">
     <script src="../js/theme.js"></script>
-    <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/dark-mode.css">
-    <script src="../js/modernizr.js"></script>
-    <script defer src="../js/fontawesome/all.min.js"></script>
-    <script src="../js/sky.js" defer></script>
+    <script src="../js/components.js"></script>
+    <script>SiteComponents.blogHead({pathPrefix: '../'})</script>
 </head>
 
 <body id="top">
-    <canvas class="sky-canvas" aria-hidden="true"></canvas>
+    <script>document.write(SiteComponents.skyCanvas())</script>
+    <script>document.write(SiteComponents.blogPreloader())</script>
+    <script>document.write(SiteComponents.blogHeader('blogs', '../'))</script>
 
-    <!-- preloader
-    ================================================== -->
-    <div id="preloader">
-        <div id="loader" class="dots-fade">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>
-
-    <!-- Header
-    ================================================== -->
-    <header class="s-header">
-
-        <div class="row">
-            <div class="s-header__content column">
-                <div class="s-header__brand">
-                    <h1 class="s-header__logotext">
-                        <a href="../blogs.html" title="">Ruida's Room</a>
-                    </h1>
-                    <p class="s-header__tagline">Private thoughts, book & movie reviews, and yummy recipes.</p>
-                </div>
-            </div>
-        </div> <!-- end row -->
-
-        <nav class="s-header__nav-wrap">
-
-          <div class="row">
-
-               <ul class="s-header__nav">
-                   <li><a href="../index.html">Home</a></li>
-                   <li><a href="../news.html">News</a></li>
-                   <li><a href="../publications.html">Publications</a></li>
-                   <li><a href="../projects.html">Projects</a></li>
-                   <li class="current"><a href="../blogs.html">Blogs</a></li>
-                   <li><a href="../contact.html">Contact</a></li>
-               </ul>
-
-           </div>
-
-       </nav>
-
-        <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
-
-    </header>
-
-    <!-- Content
-    ================================================== -->
     <div class="s-content">
-
         <div class="row">
-
             <div id="main" class="s-content__main large-8 column">
-
                 <article class="entry">
-
                     <header class="entry__header">
-
+                        <a href="../blogs.html" class="entry__back">&larr; Back to Blogs</a>
                         <h2 class="entry__title h1">
                             <a href="blog-0710-2022.html" title="Cantonese Food Review">Cantonese Food Review (Part 1)</a>
                         </h2>
-
                         <div class="entry__meta">
                             <ul>
                                 <li>July 10, 2022</li>
@@ -88,9 +29,7 @@
                                 <li>Ruida Zeng</li>
                             </ul>
                         </div>
-
                     </header>
-
                     <div class="entry__content">
                         <p>
                             I grew up eating Cantonese food, and it's honestly the cuisine I'm most nostalgic about. Cantonese cuisine comes from the Guangdong province of China and is one of the Eight Culinary Traditions of Chinese cuisine. It has a long history and is known for its variety of ingredients, cooking methods, and flavors. In this blog post, I want to share some of my all-time favorite Cantonese dishes.
@@ -101,8 +40,8 @@
                             Double-skin milk is a Cantonese dessert made with milk, egg whites, and sugar. It is called "double-skin" because it has two layers of milk skin. The first layer is formed when the milk is heated, and the second layer is formed when the milk is cooled. The dessert is very smooth and creamy, and it has a very delicate flavor. It is usually served cold, and it is a perfect dessert for hot summer days.
                         </p>
                         <p>
-                            <img src="../images/food/double_skin_milk.jpg" 
-                                 alt="Double-Skin Milk" 
+                            <img src="../images/food/double_skin_milk.jpg"
+                                 alt="Double-Skin Milk"
                                  class="lazyload">
                         </p>
 
@@ -111,8 +50,8 @@
                             Grain worm is a Cantonese dessert made with glutinous rice flour, sugar, and water. It is called "grain worm" because it looks like a worm. The dessert is very chewy and sweet, and it is usually served with coconut milk. It is a very popular dessert in Guangzhou, and it is often served in dim sum restaurants.
                         </p>
                         <p>
-                            <img src="../images/food/grain_worm.jpg" 
-                                 alt="Grain Worm" 
+                            <img src="../images/food/grain_worm.jpg"
+                                 alt="Grain Worm"
                                  class="lazyload">
                         </p>
 
@@ -121,8 +60,8 @@
                             Pork offal is a Cantonese dish made with pork intestines, pork liver, pork heart, pork lungs, and pork stomach. It is usually served with a spicy sauce, and it is a very popular dish in Guangzhou. The dish is very flavorful and has a very unique texture. It is often served in street food stalls, and it is a perfect dish for cold winter days.
                         </p>
                         <p>
-                            <img src="../images/food/pork_offal.jpg" 
-                                 alt="Pork Offal" 
+                            <img src="../images/food/pork_offal.jpg"
+                                 alt="Pork Offal"
                                  class="lazyload">
                         </p>
 
@@ -131,8 +70,8 @@
                             Fish skin is a Cantonese dish made with fish skin, soy sauce, sugar, and spices. It is usually served as an appetizer, and it is a very popular dish in Guangzhou. The dish is very crispy and flavorful, and it is often served with beer. It is a perfect dish for parties and gatherings.
                         </p>
                         <p>
-                            <img src="../images/food/fishskin.jpg" 
-                                 alt="Fish Skin" 
+                            <img src="../images/food/fishskin.jpg"
+                                 alt="Fish Skin"
                                  class="lazyload">
                         </p>
 
@@ -141,8 +80,8 @@
                             Pigeon is a Cantonese dish made with young pigeon, soy sauce, sugar, and spices. It is usually served as a main dish, and it is a very popular dish in Guangzhou. The dish is very tender and flavorful, and it is often served in high-end restaurants. It is a perfect dish for special occasions and celebrations.
                         </p>
                         <p>
-                            <img src="../images/food/pigeon.jpg" 
-                                 alt="Pigeon" 
+                            <img src="../images/food/pigeon.jpg"
+                                 alt="Pigeon"
                                  class="lazyload">
                         </p>
 
@@ -151,26 +90,21 @@
                             White cut chicken is a Cantonese dish made with whole chicken, ginger, green onion, and salt. It is usually served as a main dish, and it is a very popular dish in Guangzhou. The dish is very tender and juicy, and it is often served with a dipping sauce made with ginger, green onion, and oil. It is a perfect dish for family dinners and gatherings.
                         </p>
                         <p>
-                            <img src="../images/food/chicken.jpg" 
-                                 alt="Chicken" 
+                            <img src="../images/food/chicken.jpg"
+                                 alt="Chicken"
                                  class="lazyload">
                         </p>
 
                         <p>
                             These are just a few of my favorite Cantonese dishes. Cantonese cuisine is very diverse and has a lot of different flavors and textures. If you have a chance to visit Guangzhou, I highly recommend trying these dishes. They are all very delicious and unique.
                         </p>
-
                     </div>
-
                 </article>
-
-            </div> <!-- end entry -->
+            </div>
 
             <div id="sidebar" class="s-content__sidebar large-4 column">
-
                 <div class="widget widget_tags">
                     <h3 class="h6">Post Tags</h3>
-
                     <div class="tagcloud group">
                         <a href="#0">Food</a>
                         <a href="#0">Cantonese</a>
@@ -179,48 +113,17 @@
                         <a href="#0">Cuisine</a>
                     </div>
                 </div>
-
                 <div class="widget widget_popular">
                     <h3 class="h6">Other Posts</h3>
                     <ul class="link-list">
                         <li><a href="blog-0106-2023.html">New York City Trip Day 1 of 5</a></li>
                     </ul>
                 </div>
-
-            </div> <!-- end sidebar -->
-
-        </div> <!-- end row -->
-
-    </div> <!-- end content-wrap -->
-
-
-    <!-- Footer
-    ================================================== -->
-    <footer class="s-footer">
-
-        <div class="row s-footer__bottom">
-            <div class="column">
-                <div class="ss-copyright">
-                    <span>© Ruida Zeng 2025</span> 
-                    <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
-                </div>
             </div>
         </div>
+    </div>
 
-        <div class="ss-go-top">
-            <a class="smoothscroll" title="Back to Top" href="#top">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0l8 9h-6v15h-4v-15h-6z"/></svg>
-            </a>
-        </div>
-
-    </footer>
-
-
-    <!-- Java Script
-    ================================================== -->
-    <script src="../js/jquery-3.2.1.min.js"></script>
-    <script src="../js/main.js"></script>
-
+    <script>document.write(SiteComponents.blogFooterSimple())</script>
+    <script>SiteComponents.blogBottomScripts('../')</script>
 </body>
-
 </html>
