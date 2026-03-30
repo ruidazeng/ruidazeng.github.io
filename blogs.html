@@ -3,69 +3,15 @@
 <head>
     <meta charset="utf-8">
     <title>Ruida's Blogs</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="images/icons/squirrel-icon.png" type="image/icon type">
     <script src="js/theme.js"></script>
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/dark-mode.css">
-    <script src="js/modernizr.js"></script>
-    <script defer src="js/fontawesome/all.min.js"></script>
-    <script src="js/sky.js" defer></script>
+    <script src="js/components.js"></script>
+    <script>SiteComponents.blogHead({})</script>
 </head>
 
 <body id="top">
-    <canvas class="sky-canvas" aria-hidden="true"></canvas>
-
-    <!-- preloader
-    ================================================== -->
-    <div id="preloader">
-        <div id="loader" class="dots-fade">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>
-
-    <!-- Header
-    ================================================== -->
-    <header class="s-header">
-
-        <div class="row">
-            <div class="s-header__content column">
-                <div class="s-header__brand">
-                    <h1 class="s-header__logotext">
-                        <a href="blogs.html" title="">Ruida's Room</a>
-                    </h1>
-                    <p class="s-header__tagline">Private thoughts, book & movie reviews, and yummy recipes.</p>
-                </div>
-            </div>
-        </div> <!-- end row -->
-
-        <nav class="s-header__nav-wrap">
-
-           <div class="row">
-
-                <ul class="s-header__nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="news.html">News</a></li>
-                    <li><a href="publications.html">Publications</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li class="current"><a href="blogs.html">Blogs</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-
-           </div>
-
-        </nav> <!-- end #nav-wrap -->
-
-        <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
-
-    </header> <!-- Header End -->
-
-
+    <script>document.write(SiteComponents.skyCanvas())</script>
+    <script>document.write(SiteComponents.blogPreloader())</script>
+    <script>document.write(SiteComponents.blogHeader('blogs', ''))</script>
 
     <!-- Content
     ================================================== -->
@@ -86,7 +32,7 @@
                             </ul>
                         </div>
                     </header>
-                </article> <!-- end entry -->
+                </article>
 
                 <article class="entry">
                     <header class="entry__header">
@@ -100,7 +46,7 @@
                             </ul>
                         </div>
                     </header>
-                </article> <!-- end entry -->
+                </article>
 
                 <article class="entry">
                     <header class="entry__header">
@@ -114,7 +60,7 @@
                             </ul>
                         </div>
                     </header>
-                </article> <!-- end entry -->
+                </article>
 
                 <article class="entry">
                     <header class="entry__header">
@@ -128,7 +74,7 @@
                             </ul>
                         </div>
                     </header>
-                </article> <!-- end entry -->
+                </article>
 
                 <article class="entry">
                     <header class="entry__header">
@@ -142,7 +88,7 @@
                             </ul>
                         </div>
                     </header>
-                </article> <!-- end entry -->
+                </article>
 
                 <article class="entry">
                     <header class="entry__header">
@@ -156,7 +102,7 @@
                             </ul>
                         </div>
                     </header>
-                </article> <!-- end entry -->
+                </article>
 
                 <article class="entry">
                     <header class="entry__header">
@@ -170,7 +116,7 @@
                             </ul>
                         </div>
                     </header>
-                </article> <!-- end entry -->
+                </article>
 
                 <article class="entry">
                     <header class="entry__header">
@@ -184,7 +130,7 @@
                             </ul>
                         </div>
                     </header>
-                </article> <!-- end entry -->
+                </article>
 
                 <article class="entry">
                     <header class="entry__header">
@@ -204,81 +150,18 @@
                         </p>
                         <img src="images/squirrel.jpg" alt="squirrel" class="lazyload" style="width:50%">
                     </div>
-                </article> <!-- end entry -->
+                </article>
 
-                <!-- page nav -->
                 <div class="post-list-nav">
                 </div>
 
            </div> <!-- end main -->
 
-    <!-- Footer
-    ================================================== -->
-    <footer class="s-footer">
-
-        <div class="row s-footer__bottom">
-
-            <div class="large-6 tab-full column s-footer__info">
-                <h3 class="h6">About Ruida's Room</h3>
-
-                <p>
-                Ruida's Room is a place where I share some of my spontaneous ideas and shower thoughts so that
-                they don't get lost in time. I also plan on uploading all my book and movie reviews from the last
-                few years once I figure out how to categorize them correctly. Last but not least, I will be posting
-                some delicious homemade recipes for food and drinks regularly.
-                </p>
-
-                <p>
-                Stay tuned!
-                </p>
-            </div>
-
-            <div class="large-6 tab-full column">
-                <div class="row">
-                    <div class="large-8 tab-full column">
-                    </div>
-
-                    <div class="large-4 tab-full column">
-                        <h3  class="h6">Navigate</h3>
-
-                        <ul class="s-footer__list s-footer-list--nav group">
-                          <li><a href="index.html">Home</a></li>
-                          <li><a href="news.html">News</a></li>
-                          <li><a href="publications.html">Publications</a></li>
-                          <li><a href="projects.html">Projects</a></li>
-                          <li class="current"><a href="blogs.html">Blogs</a></li>
-                          <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="ss-copyright">
-                <span>© Ruida Zeng <span class="current-year"></span></span>
-            </div>
-            <p class="powered-by">
-                Powered by Keep It Simple from <a href="https://www.styleshout.com/">StyleShout</a>
-            </p>
-
-        </div> <!-- end footer__bottom -->
-
-
-        <div class="ss-go-top">
-            <a class="smoothscroll" title="Back to Top" href="#top">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0l8 9h-6v15h-4v-15h-6z"/></svg>
-            </a>
-        </div> <!-- end ss-go-top -->
-
-   </footer> <!-- end Footer-->
+    <script>document.write(SiteComponents.blogFooterFull())</script>
 </div>
 </div>
 
-
-   <!-- Java Script
-    ================================================== -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/year.js"></script>
+    <script>SiteComponents.blogBottomScriptsWithYear('')</script>
 
 </body>
 

@@ -3,160 +3,89 @@
 <head>
 	<title>Updatable Private Set Intersection Revisited: Extended Functionalities, Deletion, and Worst-Case Complexity</title>
 	<meta charset="utf-8">
-	<meta name="author" content="Ruida Zeng">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="icon" href="images/icons/squirrel-icon.png" type="image/icon type">
 	<script src="js/theme.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/academic.css">
-	<link rel="stylesheet" type="text/css" href="css/dark-mode.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" crossorigin="anonymous">
-	<script src="js/jquery.js" defer></script>
-	<script src="js/bootstrap.js" defer></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js" crossorigin="anonymous" defer></script>
-	<script>
-		window.addEventListener("load", function(){
-			window.cookieconsent.initialise({
-				"palette": {
-					"popup": {
-						"background": "#5b8fb9",
-						"text": "#fff"
-					},
-					"button": {
-						"background": "#fff",
-						"text": "#5b8fb9"
-					}
-				},
-				"theme": "classic",
-				"content": {
-					"message": "This website uses cookies to ensure you get the best experience on my website.",
-					"dismiss": "Got it!",
-					"link": "Learn more",
-					"href": "https://www.cookiesandyou.com"
-				}
-			})});
-	</script>
-	<script src="js/sky.js" defer></script>
+	<script src="../js/components.js"></script>
+	<script>SiteComponents.academicHead({pathPrefix: '../', noLazysizes: true})</script>
 </head>
-	<body>
-	<canvas class="sky-canvas" aria-hidden="true"></canvas>
-		<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
-			<div class="container">
-				<div class="d-none d-lg-inline-flex">
-					<a class="navbar-brand" href="https://www.ruidazeng.com">Ruida Zeng</a>
+<body>
+	<script>document.write(SiteComponents.skyCanvas())</script>
+	<script>document.write(SiteComponents.academicNav('publications', '../'))</script>
+	<div class="pub">
+		<div class="article-container pt-3">
+			<a href="../publications.html" class="pub-back">&larr; Back to Publications</a>
+			<h1>Updatable Private Set Intersection Revisited: Extended Functionalities, Deletion, and Worst-Case Complexity</h1>
+			<div class="article-metadata">
+				<div>
+					<span>Saikrishna Badrinarayanan, Peihan Miao, Xinyi Shi, Max Tromanhauser, and <strong>Ruida Zeng</strong></span>
 				</div>
-				<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-					<span><i class="fas fa-bars"></i></span>
-				</button>
-				<div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-					<a class="navbar-brand" href="https://www.ruidazeng.com">Ruida Zeng</a>
-				</div>
-				<div class="navbar-collapse main-menu-item justify-content-end collapse" id="navbar-content">
-					<ul class="navbar-nav d-md-inline-flex">
-						<li class="nav-item">
-							<a class="nav-link " href="../index.html"><span>Home</span></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link " href="../news.html"><span>News</span></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link active" href="../publications.html"><span>Publications</span></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link " href="../projects.html"><span>Projects</span></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link " href="../blogs.html"><span>Blogs</span></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link " href="../contact.html"><span>Contact</span></a>
-						</li>
-					</ul>
-				</div>
+				<span class="article-date">
+					December 2024
+				</span>
 			</div>
-		</nav>
-		<div class="pub">
-			<div class="article-container pt-3">
-				<h1>Updatable Private Set Intersection Revisited: Extended Functionalities, Deletion, and Worst-Case Complexity</h1>
-				<div class="article-metadata">
-					<div>
-						<span>Saikrishna Badrinarayanan, Peihan Miao, Xinyi Shi, Max Tromanhauser, and <strong>Ruida Zeng</strong></span>
-					</div>
-					<span class="article-date">
-						December 2024
-					</span>
-				</div>
-				<div class="btn-links">
-					<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="../files/Updatable Private Set Intersection Revisited Extended Functionalities Deletion and Worst-Case Complexity.pdf" target="_blank" rel="noopener">
-						PDF
-					</a>
-					<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://asiacrypt.iacr.org/2024/" target="_blank" rel="noopener">
-						Conference
-					</a>
-					<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://asiacrypt.iacr.org/2024/program.php" target="_blank" rel="noopener">
-						Program
-					</a>
-					<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://artifacts.iacr.org/asiacrypt/2024/a12/" target="_blank" rel="noopener">
-						Artifact
-					</a>
-					<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.youtube.com/watch?v=FddijxFRAeY" target="_blank" rel="noopener">
-						Presentation
-					</a>
-					<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://iacr.org/submit/files/slides/2024/asiacrypt/asiacrypt2024/287/287_slides.pdf" target="_blank" rel="noopener">
-						Slides
-					</a>
-					<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://eprint.iacr.org/2024/1446" target="_blank" rel="noopener">
-						IACR
-					</a>
-					<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://link.springer.com/chapter/10.1007/978-981-96-0938-3_7" target="_blank" rel="noopener">
-						Springer
-					</a>
-					<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://eprint.iacr.org/2024/1446.pdf" target="_blank" rel="noopener">
-						ePrint
-					</a>
-					<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/ruidazeng/upsi-revisited" target="_blank" rel="noopener">
-						GitHub
-					</a>
-				</div>
-			</div>
-			<div class="article-container">
-				<h3>Abstract</h3>
-				<p class="pub-abstract">Private set intersection (PSI) allows two mutually distrusting parties each holding a private set of elements, to learn the intersection of their sets without revealing anything beyond the intersection. Recent work (Badrinarayanan et al., PoPETS'22) initiates the study of updatable PSI (UPSI), which allows the two parties to compute PSI on a regular basis with sets that constantly get updated, where both the computation and communication complexity only grow with the size of the small updates and not the large entire sets. However, there are several limitations of their presented protocols. First, they can only be used to compute the plain PSI functionality and do not support extended functionalities such as PSI-Cardinality and PSI-Sum. Second, they only allow parties to add new elements to their existing set and do not support arbitrary deletion of elements.  Finally, their addition-only protocols either require both parties to learn the output or only achieve low complexity in an amortized sense and incur linear worst-case complexity.
-				<br><br>In this work, we address all the above limitations. In particular, we study UPSI with semi-honest security in both the addition-only and addition-deletion settings. We present new protocols for both settings that support plain PSI as well as extended functionalities including PSI-Cardinality and PSI-Sum, achieving one-sided output (which implies two-sided output). In the addition-only setting, we also present a protocol for a more general functionality Circuit-PSI that outputs secret shares of the intersection. All of our protocols have worst-case computation and communication complexity that only grow with the set updates instead of the entire sets (except for a polylogarithmic factor). We implement our new UPSI protocols and compare with the state-of-the-art protocols for PSI and extended functionalities. Our protocols compare favorably when the total set sizes are sufficiently large, the new updates are sufficiently small, or in networks with low bandwidth.</p>
-				<div class="row">
-					<div class="col-md-1"></div>
-					<div class="col-md-10">
-						<div class="row">
-							<div class="col-12 col-md-3 pub-row-heading">Type</div>
-							<div class="col-12 col-md-9">
-									Conference Proceedings
-							</div>
-						</div>
-					</div>
-					<div class="col-md-1"></div>
-				</div>
-				<div class="d-md-none space-below"></div>
-				<div class="row">
-					<div class="col-md-1"></div>
-					<div class="col-md-10">
-						<div class="row">
-							<div class="col-12 col-md-3 pub-row-heading">Publication</div>
-							<div class="col-12 col-md-9">Advances in Cryptology – ASIACRYPT 2024, 30th International Conference on the Theory and Application of Cryptology and Information Security, Part VI, December 9-13, 2024, Kolkata, India.</div>
-						</div>
-					</div>
-					<div class="col-md-1"></div>
-				</div>
-				<div id="author-card"></div>
+			<div class="btn-links">
+				<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="../files/Updatable Private Set Intersection Revisited Extended Functionalities Deletion and Worst-Case Complexity.pdf" target="_blank" rel="noopener">
+					PDF
+				</a>
+				<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://asiacrypt.iacr.org/2024/" target="_blank" rel="noopener">
+					Conference
+				</a>
+				<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://asiacrypt.iacr.org/2024/program.php" target="_blank" rel="noopener">
+					Program
+				</a>
+				<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://artifacts.iacr.org/asiacrypt/2024/a12/" target="_blank" rel="noopener">
+					Artifact
+				</a>
+				<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.youtube.com/watch?v=FddijxFRAeY" target="_blank" rel="noopener">
+					Presentation
+				</a>
+				<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://iacr.org/submit/files/slides/2024/asiacrypt/asiacrypt2024/287/287_slides.pdf" target="_blank" rel="noopener">
+					Slides
+				</a>
+				<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://eprint.iacr.org/2024/1446" target="_blank" rel="noopener">
+					IACR
+				</a>
+				<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://link.springer.com/chapter/10.1007/978-981-96-0938-3_7" target="_blank" rel="noopener">
+					Springer
+				</a>
+				<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://eprint.iacr.org/2024/1446.pdf" target="_blank" rel="noopener">
+					ePrint
+				</a>
+				<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/ruidazeng/upsi-revisited" target="_blank" rel="noopener">
+					GitHub
+				</a>
 			</div>
 		</div>
-<script src="js/author_card.js"></script>
-<script src="../js/year.js"></script>
-	<footer class="site-footer">
-		<p class="ss-copyright">
-			© Ruida Zeng <span class="current-year"></span>
-		</p>
-	</footer>
+		<div class="article-container">
+			<h3>Abstract</h3>
+			<p class="pub-abstract">Private set intersection (PSI) allows two mutually distrusting parties each holding a private set of elements, to learn the intersection of their sets without revealing anything beyond the intersection. Recent work (Badrinarayanan et al., PoPETS'22) initiates the study of updatable PSI (UPSI), which allows the two parties to compute PSI on a regular basis with sets that constantly get updated, where both the computation and communication complexity only grow with the size of the small updates and not the large entire sets. However, there are several limitations of their presented protocols. First, they can only be used to compute the plain PSI functionality and do not support extended functionalities such as PSI-Cardinality and PSI-Sum. Second, they only allow parties to add new elements to their existing set and do not support arbitrary deletion of elements.  Finally, their addition-only protocols either require both parties to learn the output or only achieve low complexity in an amortized sense and incur linear worst-case complexity.
+			<br><br>In this work, we address all the above limitations. In particular, we study UPSI with semi-honest security in both the addition-only and addition-deletion settings. We present new protocols for both settings that support plain PSI as well as extended functionalities including PSI-Cardinality and PSI-Sum, achieving one-sided output (which implies two-sided output). In the addition-only setting, we also present a protocol for a more general functionality Circuit-PSI that outputs secret shares of the intersection. All of our protocols have worst-case computation and communication complexity that only grow with the set updates instead of the entire sets (except for a polylogarithmic factor). We implement our new UPSI protocols and compare with the state-of-the-art protocols for PSI and extended functionalities. Our protocols compare favorably when the total set sizes are sufficiently large, the new updates are sufficiently small, or in networks with low bandwidth.</p>
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<div class="row">
+						<div class="col-12 col-md-3 pub-row-heading">Type</div>
+						<div class="col-12 col-md-9">
+								Conference Proceedings
+						</div>
+					</div>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+			<div class="d-md-none space-below"></div>
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<div class="row">
+						<div class="col-12 col-md-3 pub-row-heading">Publication</div>
+						<div class="col-12 col-md-9">Advances in Cryptology – ASIACRYPT 2024, 30th International Conference on the Theory and Application of Cryptology and Information Security, Part VI, December 9-13, 2024, Kolkata, India.</div>
+					</div>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+			<div id="author-card"></div>
+		</div>
+	</div>
+	<script src="js/author_card.js"></script>
+	<script>document.write(SiteComponents.academicFooter())</script>
 </body>
-
 </html>

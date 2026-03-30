@@ -1833,6 +1833,21 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     padding: 4.4rem 0 3.6rem 0;
 }
 
+.s-content:has(.entry__back) {
+    padding-top: 1rem;
+}
+
+body:has(.entry) .s-header__content {
+    min-height: 0;
+    padding-bottom: 3rem;
+}
+
+@media screen and (max-width:800px) {
+    body:has(.entry) .s-header__content {
+        padding-bottom: 3rem;
+    }
+}
+
 .s-content__main {
     padding-right: 4.6rem;
 }
@@ -2289,6 +2304,20 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .entry h2 a:hover, .entry h2 a:focus {
     color: #2a6496;
+}
+
+.entry__back {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 0.3s;
+}
+
+.entry__back:hover {
+    color: #ffffff;
 }
 
 .entry__header {
