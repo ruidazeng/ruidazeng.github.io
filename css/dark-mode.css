@@ -702,6 +702,31 @@ body.dark .btn-outline-primary:not(:disabled):not(.disabled):active {
     }
 }
 
+/* --- Links dark mode --- */
+[data-theme="dark"] .s-content__sidebar .link-list li a,
+[data-theme="dark"] .s-footer__list li a,
+[data-theme="dark"] .s-footer__social li a,
+[data-theme="dark"] .entry__post-nav li a {
+    color: #8bb8d9;
+}
+[data-theme="dark"] .s-content__sidebar .link-list li a:hover,
+[data-theme="dark"] .s-content__sidebar .link-list li a:focus,
+[data-theme="dark"] .s-footer__list li a:hover,
+[data-theme="dark"] .s-footer__list li a:focus,
+[data-theme="dark"] .s-footer__social li a:hover,
+[data-theme="dark"] .s-footer__social li a:focus,
+[data-theme="dark"] .entry__post-nav li a:hover,
+[data-theme="dark"] .entry__post-nav li a:focus {
+    color: #ffffff;
+}
+[data-theme="dark"] .entry h2 a {
+    color: #8bb8d9;
+}
+[data-theme="dark"] .entry h2 a:hover,
+[data-theme="dark"] .entry h2 a:focus {
+    color: #ffffff;
+}
+
 /* --- Comment section dark mode --- */
 [data-theme="dark"] .comment__info .comment__author {
     color: #ffffff;

@@ -1933,7 +1933,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .s-content__sidebar .link-list li a {
-    color: #3e3e3e;
+    color: #2a6496;
 }
 
 .s-content__sidebar .link-list li a:hover, .s-content__sidebar .link-list li a:focus {
@@ -2061,7 +2061,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .s-footer__list li a {
-    color: #3e3e3e;
+    color: #2a6496;
 }
 
 .s-footer__list li a:hover, .s-footer__list li a:focus {
@@ -2090,7 +2090,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .s-footer__social li a {
-    color: #3e3e3e;
+    color: #2a6496;
 }
 
 .s-footer__social li a:hover, .s-footer__social li a:focus {
@@ -2284,11 +2284,11 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .entry h2 a {
-    color: #272727;
+    color: #1a5276;
 }
 
 .entry h2 a:hover, .entry h2 a:focus {
-    color: #000000;
+    color: #2a6496;
 }
 
 .entry__header {
@@ -2371,7 +2371,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .entry__post-nav li a {
-    color: #3e3e3e;
+    color: #2a6496;
 }
 
 .entry__post-nav li strong {
