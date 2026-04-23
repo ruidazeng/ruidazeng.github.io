@@ -51,7 +51,6 @@ var SiteComponents = (function() {
         html += '<link rel="stylesheet" type="text/css" href="' + p + 'css/academic.css">';
         html += '<link rel="stylesheet" type="text/css" href="' + p + 'css/dark-mode.css">';
         html += '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" crossorigin="anonymous">';
-        html += '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" crossorigin="anonymous">';
         // html += '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" crossorigin="anonymous">';
 
         // Extra CSS (e.g., contact page extras)
