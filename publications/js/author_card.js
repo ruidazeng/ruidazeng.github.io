@@ -1,7 +1,7 @@
 (function(){
   var cardHtml = '\
 <div class="media author-card content-widget-hr">\
-    <img class="avatar mr-3 avatar-circle" src="images/byx.jpg" alt="Ruida Zeng">\
+    <img class="avatar mr-3 avatar-circle" src="../images/byx_optimized.jpg" alt="Ruida Zeng">\
     <div class="media-body">\
         <h5 class="card-title"><a href="https://www.ruidazeng.com/">Ruida Zeng</a></h5>\
         <h6 class="card-subtitle">Computer Scientist</h6>\
